@@ -3,7 +3,7 @@ README
 This is the portfolio and information site for Dan Johnson.
 
 > **"Turtles all the way down"** is a jocular expression of the <a href="http://en.wikipedia.org/wiki/Infinite_regress">infinite
-> regress</a> problem in cosmology posed by the "unmoved mover" paradox.
+> regress</a> problem in cosmology posed by the "<a href="http://en.wikipedia.org/wiki/Unmoved_mover">unmoved mover</a>" paradox.
 > The metaphor in the anecdote represents a popular notion of the myth
 > that Earth is actually flat and is supported on the back of a World
 > Turtle, which itself is propped up by a chain of larger and larger
