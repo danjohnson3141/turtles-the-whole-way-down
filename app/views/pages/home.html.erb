@@ -1,13 +1,19 @@
 <style>
 .jumbotron {
+    margin-bottom: 0px;
     background-image: url('<%= image_path("turtles3.jpg") %> ');
+    background-position: 0% 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #f9d000;
+    text-shadow: black 0.3em 0.3em 0.3em;
 }
 </style>
 <% provide(:title, '') %>
 
 <% provide(:jumbotron, '
-	<h2>Turtles all the way down</h2>
-	<p>"Turtles all the way down" is a jocular expression of the infinite regress problem in cosmology posed by the "unmoved mover" paradox. The metaphor in the anecdote represents a popular notion of the myth that Earth is actually flat and is supported on the back of a World Turtle, which itself is propped up by a chain of larger and larger turtles. Questioning what the final turtle might be standing on, the anecdote humorously concludes that it is "turtles all the way down".</p>
+	<h2>Turtles the whole way down</h2>
+	<p>"Turtles the whole way down" is a jocular expression of the infinite regress problem in cosmology posed by the "unmoved mover" paradox. The metaphor in the anecdote represents a popular notion of the myth that Earth is actually flat and is supported on the back of a World Turtle, which itself is propped up by a chain of larger and larger turtles. Questioning what the final turtle might be standing on, the anecdote humorously concludes that it is "turtles the whole way down".</p>
       <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
   '.html_safe)%>
 
