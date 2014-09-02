@@ -25,6 +25,8 @@ body {
 .jumbotron {
     margin-bottom: 0px;
     background-image: url(turtles3.jpg);
+    // background-image: url('<%= asset_path("turtles3.jpg") %> ');
+    // background-image: url('<%= asset_path("logo1111.png") %> ');
     background-position: 0% 49%;
     background-size: cover;
     background-repeat: no-repeat;
