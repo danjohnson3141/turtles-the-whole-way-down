@@ -10,6 +10,10 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+group :production, :staging do
+  gem "pg"
+end
+
 gem 'high_voltage'
 
 # Use SCSS for stylesheets
