@@ -14,6 +14,8 @@ What's with the name?!?
 
 The phrase was used by Stephen Hawking in 1988, but has been commonly known since at least the early 20th century. A comparable metaphor describing the circular cause and consequence for the same problem is the "<a href="http://en.wikipedia.org/wiki/Chicken_and_egg_problem">chicken and egg problem</a>". The same problem in epistemology is known as the <a href="http://en.wikipedia.org/wiki/M%C3%BCnchhausen_trilemma">Münchhausen trilemma</a>.
 
+Information courtesy of <a href="http://en.wikipedia.org/wiki/Turtles_all_the_way_down">wikipedia</a> 
+
 <a href="http://www.turtlesthewholewaydown.com">![http://s25.postimg.org/c7r69t1v3/turtles4.jpg](http://s25.postimg.org/c7r69t1v3/turtles4.jpg)</a>
 
-Information from <a href="http://en.wikipedia.org/wiki/Turtles_all_the_way_down">wikipedia</a> 
+
