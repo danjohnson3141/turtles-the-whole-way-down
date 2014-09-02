@@ -1,7 +1,7 @@
 module ApplicationHelper
   def site_name
     # Change the value below between the quotes.
-    "Project Name"
+    "Turtles The Whole Way Down | A Portfolio and Information site for Dan Johnson"
   end
 
   def site_url
