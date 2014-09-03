@@ -1,7 +1,7 @@
 module ApplicationHelper
   def site_name
     # Change the value below between the quotes.
-    "Turtles The Whole Way Down | A Portfolio and Information site for Dan Johnson"
+    "Turtles The Whole Way Down | A Portfolio and Information Site for Dan Johnson"
   end
 
   def site_url
@@ -26,7 +26,7 @@ module ApplicationHelper
 
   def meta_keywords
     # Change the value below between the quotes.
-    "Add your keywords here"
+    "ruby on rails php developer portland experienced"
   end
 
   # Returns the full title on a per-page basis.
