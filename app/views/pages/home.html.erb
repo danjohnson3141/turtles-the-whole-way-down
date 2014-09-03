@@ -5,15 +5,34 @@
     background-position: 0% 40%;
     background-size: cover;
     background-repeat: no-repeat;
-    color: #f9d000;
+    /*color: #f9d000;*/
+    color: white;
     text-shadow: black 0.3em 0.3em 0.3em;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
+.jumbotron:hover {
+    background-color:#000;
+    opacity:1;
+    border-radius:5px;
+}
+
+.jumbotron_link {
+  color: #C0E93F;
+  text-decoration: underline;
+}
+.jumbotron_link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
 </style>
 <% provide(:title, '') %>
 
 <% provide(:jumbotron, '
 	<h2>Turtles the whole way down</h2>
-	<p>"Turtles the whole way down" is a jocular expression of the infinite regress problem in cosmology posed by the "unmoved mover" paradox. The metaphor in the anecdote represents a popular notion of the myth that Earth is actually flat and is supported on the back of a World Turtle, which itself is propped up by a chain of larger and larger turtles. Questioning what the final turtle might be standing on, the anecdote humorously concludes that it is "turtles the whole way down".</p>
+	<p>"Turtles the whole way down" is a jocular expression of the <a href="http://en.wikipedia.org/wiki/Infinite_regress" class="jumbotron_link">infinite regress</a> problem in cosmology posed by the "<a href="http://en.wikipedia.org/wiki/Unmoved_mover" class="jumbotron_link">unmoved mover</a>" paradox. The metaphor in the anecdote represents a popular notion of the myth that Earth is actually flat and is supported on the back of a World Turtle, which itself is propped up by a chain of larger and larger turtles. Questioning what the final turtle might be standing on, the anecdote humorously concludes that it is "turtles the whole way down".</p>
       <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
   '.html_safe)%>
 
@@ -21,17 +40,17 @@
     <!-- Example row of columns -->
     <div class="row">
       <div class="col-md-4">
-        <h2>Heading</h2>
+        <h2>Rails Projects</h2>
         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
         <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
       </div>
       <div class="col-md-4">
-        <h2>Heading</h2>
+        <h2>PHP Projects</h2>
         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
         <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
      </div>
       <div class="col-md-4">
-        <h2>Heading</h2>
+        <h2>Other</h2>
         <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
       </div>

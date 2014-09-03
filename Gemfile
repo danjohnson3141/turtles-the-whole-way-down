@@ -17,6 +17,8 @@ gem 'rails_12factor', group: :production
 
 gem 'high_voltage'
 
+gem 'sprockets'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 

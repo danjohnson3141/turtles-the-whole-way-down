@@ -1,4 +1,4 @@
-@import "bootstrap-sprockets";
+// @import "bootstrap-sprockets";
 @import "bootstrap.min";
 @import "bootstrap-theme.min";
 
@@ -7,6 +7,7 @@ body {
   padding-top: 50px;
   padding-bottom: 20px;
 }
+
 
 /* Override Rail's default error calls with Bootstrap 3 */
 .field_with_errors {
