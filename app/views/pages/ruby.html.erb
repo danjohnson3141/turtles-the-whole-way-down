@@ -1,3 +1,38 @@
-<% provide(:title, 'Page Name Here') %>
+<% provide(:title, 'Ruby') %>
 <h1>Ruby Projects</h1>
-<p>Find me in app/views/pages/ruby.html.erb</p>
+<p>Ruby on Rails has become my perfered tool for development. It works very well for projects ranging from simple to very complex. Developing in Rails I am more productive and deliver better results.</p>
+<p>Below are some person applications I have created. Unfortunately, most of my best work is on proprietery websites.</p>
+<section id="body">
+  <div id="projects">
+    <a href="http://www.devnomicon.com/">
+    	<div class="project">
+				<%= image_tag("dashboard.jpeg", size: "170x150", alt: "devnomicon", class: "left") %>
+				<p><strong>www.devnomicon.com</strong></p>
+				<p>A dashboard application written in Ruby and using the dashing gem.</p>
+		</div>
+	</a>
+	<a href="http://reading-lister.herokuapp.com/">
+		<div class="project">
+			<%= image_tag("reading_list.jpeg", size: "170x150", alt: "reading-lister", class: "right") %>
+			<p><strong>reading-lister.herokuapp.com</strong></p>
+			<p>A sample reading list application written in Ruby on Rails and Bootstrap. Admin interface created using the Active-Admin gem.</p>
+		</div>
+	</a>
+	<a href="http://fat-free-crm-3141.herokuapp.com/">
+		<div class="project">
+			<p><%= image_tag("icon.png", size: "150x150", alt: "fat-free-crm", class: "left") %>
+			<p><strong>fat-free-crm</strong></p>
+			<p>An implementation of the open source CRM package Fat Free CRM. Login with user: admin, password: password.</p>
+		</div>
+	</a>
+	<a href="">
+		<div class="project">
+			<p><%= image_tag("icon.png", size: "150x150", alt: "refinery", class: "right") %>
+			<p><strong>Refinery</strong></p>
+			An alternate version of this site written use RefineryCMS.</p>
+		</div>
+	</a>
+	</div>
+</section>
+<!-- <p>Find me in app/views/pages/ruby.html.erb</p> -->
+<p>Thanks for looking</p>
