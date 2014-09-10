@@ -12,10 +12,37 @@
     -webkit-transition: all 1s;
     transition: all 1s;
 }
+.slides {
+  margin-bottom: 0px;
+  min-height: 400px;
+  max-height: 450px;
+  padding: 20px 80px 20px 80px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: black 0.3em 0.3em 0.3em;
+  font-size: 24px;
+}
+
+.slide-1 {
+  background-image: url('<%= image_path("turtles3.jpg") %> ');
+  background-position: 0% 40%;
+}
+
+.slide-2 {
+  background-image: url('<%= image_path("bikeshedding1.jpg") %> ');
+  background-position: 0% 40%;
+  font-size: 20px;
+}
+.slide-3 {
+  background-image: url('<%= image_path("source-code1.jpg") %> ');
+  background-position: 0% 40%;
+  font-size: 38px;
+}
 .jumbotron:hover {
-    background-color:#000;
-    opacity:1;
-    border-radius:5px;
+  background-color:#000;
+  opacity:1;
+  border-radius:5px;
 }
 
 .jumbotron_link {
@@ -30,11 +57,7 @@
 </style>
 <% provide(:title, '') %>
 
-<% provide(:jumbotron, '
-	<h2>Turtles the whole way down</h2>
-	<p>"Turtles the whole way down" is a jocular expression of the <a href="http://en.wikipedia.org/wiki/Infinite_regress" class="jumbotron_link">infinite regress</a> problem in cosmology posed by the "<a href="http://en.wikipedia.org/wiki/Unmoved_mover" class="jumbotron_link">unmoved mover</a>" paradox. The metaphor in the anecdote represents a popular notion of the myth that Earth is actually flat and is supported on the back of a World Turtle, which itself is propped up by a chain of larger and larger turtles. Questioning what the final turtle might be standing on, the anecdote humorously concludes that it is "turtles the whole way down".</p>
-      <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
-  '.html_safe)%>
+
 <div id="myCarousel" class="carousel slide">
    <!-- Carousel indicators -->
    <ol class="carousel-indicators">
@@ -44,17 +67,23 @@
    </ol>   
    <!-- Carousel items -->
    <div class="carousel-inner">
-      <div class="item active">
-         <img src="/bootstrap/images/slide1.png" alt="First slide">
-         <div class="carousel-caption">This Caption 1</div>
+      <div class="item active slides slide-1">
+         <h2>Turtles the whole way down</h2>
+  <p>"Turtles the whole way down" is a jocular expression of the <a href="http://en.wikipedia.org/wiki/Infinite_regress" class="jumbotron_link">infinite regress</a> problem in cosmology posed by the "<a href="http://en.wikipedia.org/wiki/Unmoved_mover" class="jumbotron_link">unmoved mover</a>" paradox. The metaphor in the anecdote represents a popular notion of the myth that Earth is actually flat and is supported on the back of a World Turtle, which itself is propped up by a chain of larger and larger turtles. Questioning what the final turtle might be standing on, the anecdote humorously concludes that it is "turtles the whole way down".</p>
+      <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+         <!-- <div class="carousel-caption">This Caption 1</div> -->
       </div>
-      <div class="item">
-         <img src="/bootstrap/images/slide2.png" alt="Second slide">
-         <div class="carousel-caption">This Caption 2</div>
+      <div class="item slides slide-2">
+         <h2>Bikeshedding</h2>
+         <p><b>Parkinson's law of triviality</b>, also known as <b>bikeshedding</b>, is <a href="http://en.m.wikipedia.org/wiki/C._Northcote_Parkinson" title="C. Northcote Parkinson">C. Northcote Parkinson</a>'s 1957 argument that organizations give disproportionate weight to trivial issues.</p>
+         <p>The concept was first presented as a corollary of his broader "<a href="http://en.m.wikipedia.org/wiki/Parkinson%27s_law" title="Parkinson's law">Parkinson's law</a>" spoof of management. He dramatizes this "law of triviality" with the example of a committee's deliberations on an atomic reactor, contrasting it to deliberations on a bicycle shed. As he put it: "The time spent on any item of the agenda will be in inverse proportion to the sum [of money] involved." A reactor is used because it is so vastly expensive and complicated that an average person cannot understand it, so one assumes that those that work on it understand it. On the other hand, everyone can visualize a cheap, simple bicycle shed, so planning one can result in endless discussions because everyone involved wants to add a touch and show personal contribution.</p>
+         <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
       </div>
-      <div class="item">
-         <img src="/bootstrap/images/slide3.png" alt="Third slide">
-         <div class="carousel-caption">This Caption 3</div>
+      <div class="item slides slide-3">
+        <h1>Top Developer Challenges</h1>
+        <p>There are only two hard problems in Computer Science:</p>
+        <p>Cache invalidation and naming things.</p>
+        <p style="margin-left: 140px"> - Phil Karlton</p>
       </div>
    </div>
    <!-- Carousel nav -->
