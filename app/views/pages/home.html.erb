@@ -23,7 +23,11 @@
   text-shadow: black 0.3em 0.3em 0.3em;
   font-size: 24px;
 }
-
+.normal-text {
+  font-size: 20px;
+  color: black;
+  text-shadow: black 0em 0em 0em;
+}
 .slide-1 {
   background-image: url('<%= image_path("turtles3.jpg") %> ');
   background-position: 0% 40%;
@@ -35,9 +39,33 @@
   font-size: 20px;
 }
 .slide-3 {
-  background-image: url('<%= image_path("source-code1.jpg") %> ');
+  background-image: url('<%= image_path("source-code2.jpg") %> ');
   background-position: 0% 40%;
   font-size: 38px;
+}
+.slide-4 {
+  background-image: url('<%= image_path("dashing-wide.png") %> ');
+  background-position: 0% 40%;
+  font-size: 38px;
+  background-position: 0% 0%;
+}
+.slide-5 {
+  background-image: url('<%= image_path("pfhn.png") %> ');
+  background-position: 0% 40%;
+  font-size: 38px;
+  background-position: 0% 0%;
+}
+.slide-6 {
+  background-image: url('<%= image_path("reading-list1.png") %> ');
+  background-position: 0% 40%;
+  font-size: 38px;
+  background-position: 0% 0%;
+}
+.slide-7 {
+  background-image: url('<%= image_path("evanta365.png") %> ');
+  background-position: 0% 40%;
+  font-size: 38px;
+  background-position: 0% 0%;
 }
 .jumbotron:hover {
   background-color:#000;
@@ -53,10 +81,11 @@
   color: white;
   text-decoration: underline;
 }
-
+.slide-img {
+  height: 400px;
+  width: auto;
+}
 </style>
-<% provide(:title, '') %>
-
 
 <div id="myCarousel" class="carousel slide">
    <!-- Carousel indicators -->
@@ -64,6 +93,9 @@
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
    </ol>   
    <!-- Carousel items -->
    <div class="carousel-inner">
@@ -85,6 +117,23 @@
         <p>Cache invalidation and naming things.</p>
         <p style="margin-left: 140px"> - Phil Karlton</p>
       </div>
+      <div class="item slides slide-4">
+        <h1 style="top-margin: 100px; text-align: center;">Dashing Dashboard</h1>
+      </div>
+      <div class="item slides slide-5">
+        <!-- <h1 style="top-margin: 100px; text-align: center;">Dashing Dashboard</h1> -->
+      </div>
+      <div class="item slides slide-6">
+        <!-- <h1 style="top-margin: 100px; text-align: center;">Dashing Dashboard</h1> -->
+      </div>
+      <div class="item slides">
+        <!-- <h1 style="top-margin: 100px; text-align: center;">Dashing Dashboard</h1> -->
+        <img src='<%= image_path("evanta365.png") %>' class="slide-img" style="float: left; height: 400px; width: auto; margin-right: 20px;">
+        <h2 class="normal-text">Evanta365</h2>
+        <p class="normal-text">A combination of LinkedIn, CrowdCompass, Twitter, and SurveyMonkey</p>
+        <p class="normal-text">API serves data to web, iOS, and Android applications</p>
+        <p class="normal-text">API Features: Multilingual, Multitenant, Versioned, Secure, RESTful</p>
+      </div>
    </div>
    <!-- Carousel nav -->
    <a class="carousel-control left" href="#myCarousel" 
@@ -97,12 +146,12 @@
   <div class="row">
     <div class="col-md-4">
       <h2>Rails Projects</h2>
-      <p><strong>Ruby on Rails</strong>, often simply referred to as <strong>Rails</strong>, is an open source web application framework written in <a href="http://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby</a>. Rails is a full-stack framework that emphasizes the use of well-known software engineering patterns and paradigms, including <a href="http://en.wikipedia.org/wiki/Convention_over_configuration">convention over configuration</a> (CoC), <a href="http://en.wikipedia.org/wiki/Don%27t_repeat_yourself">don't repeat yourself</a> (DRY), the active record pattern, and model–view–controller (MVC). </p>
+      <p><strong>Ruby on Rails</strong>, often simply referred to as <strong>Rails</strong>, is an open source web application framework written in <a href="http://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby</a>. Rails is a full-stack framework that emphasizes the use of well-known software engineering patterns and paradigms, including <a href="http://en.wikipedia.org/wiki/Convention_over_configuration">convention over configuration</a>, <a href="http://en.wikipedia.org/wiki/Don%27t_repeat_yourself">don't repeat yourself</a> (DRY), the active record pattern, and model–view–controller (MVC). </p>
       <p><%= link_to "View Details &raquo;".html_safe, ruby_path, class: "btn btn-default" %></p>
     </div>
     <div class="col-md-4">
       <h2>PHP Projects</h2>
-      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+      <p><b>PHP</b> is a <a href="http://en.wikipedia.org/wiki/Server-side_scripting" title="Server-side scripting">server-side scripting</a> language designed for web development but also used as a <a href="http://en.wikipedia.org/wiki/General-purpose_programming_language" title="General-purpose programming language">general-purpose programming language</a>. As of January 2013, PHP was installed on more than 240 million websites (39% of those sampled) and 2.1 million <a href="http://en.wikipedia.org/wiki/Web_server" title="Web server">web servers</a>. Originally created by <a href="http://en.wikipedia.org/wiki/Rasmus_Lerdorf" title="Rasmus Lerdorf">Rasmus Lerdorf</a> in 1994, the <a href="http://en.wikipedia.org/wiki/Reference_implementation" title="Reference implementation">reference implementation</a> of PHP (powered by the <a href="/wiki/Zend_Engine" title="Zend Engine">Zend Engine</a>) is now produced by The PHP Group. While PHP originally stood for <i>Personal Home Page</i>,<sup id="cite_ref-History_of_PHP_5-1" class="reference"><a href="#cite_note-History_of_PHP-5"><span>[</span>5<span>]</span></a></sup> it now stands for <i>PHP: Hypertext Preprocessor</i>, which is a <a href="/wiki/Recursive_acronym" title="Recursive acronym">recursive acronym</a>.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span>[</span>7<span>]</span></a></sup></p>
       <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
    </div>
     <div class="col-md-4">
