@@ -1,17 +1,4 @@
 <style>
-.jumbotron {
-    margin-bottom: 0px;
-    background-image: url('<%= image_path("turtles3.jpg") %> ');
-    background-position: 0% 40%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /*color: #f9d000;*/
-    color: white;
-    text-shadow: black 0.3em 0.3em 0.3em;
-    -moz-transition: all 1s;
-    -webkit-transition: all 1s;
-    transition: all 1s;
-}
 .slides {
   margin-bottom: 0px;
   min-height: 400px;
@@ -85,6 +72,16 @@
   height: 400px;
   width: auto;
 }
+.div-right {
+  margin-top: -20px;
+  font-size: 14px;
+  float: right;
+  width: 334px;
+  border-radius: 8px;
+  background: rgba(12, 39, 1, 0.5);
+  padding: 5px 5px 0px 5px;
+  text-shadow: black 0.0em 0.0em 0.0em;
+}
 </style>
 
 <div id="myCarousel" class="carousel slide">
@@ -101,8 +98,10 @@
    <div class="carousel-inner">
       <div class="item active slides slide-1">
          <h2>Turtles the whole way down</h2>
+         <div class="div-right">
   <p>"Turtles the whole way down" is a jocular expression of the <a href="http://en.wikipedia.org/wiki/Infinite_regress" class="jumbotron_link">infinite regress</a> problem in cosmology posed by the "<a href="http://en.wikipedia.org/wiki/Unmoved_mover" class="jumbotron_link">unmoved mover</a>" paradox. The metaphor in the anecdote represents a popular notion of the myth that Earth is actually flat and is supported on the back of a World Turtle, which itself is propped up by a chain of larger and larger turtles. Questioning what the final turtle might be standing on, the anecdote humorously concludes that it is "turtles the whole way down".</p>
-      <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+  </div>
+      <p><a class="btn btn-primary btn-lg" role="button" style="margin-top: 221px;">Learn more &raquo;</a></p>
          <!-- <div class="carousel-caption">This Caption 1</div> -->
       </div>
       <div class="item slides slide-2">
