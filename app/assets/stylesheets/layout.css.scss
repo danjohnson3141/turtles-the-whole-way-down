@@ -17,33 +17,34 @@
     border-radius: 5px;
 }
 blockquote {
-    border-left: 0px;
-font-family: Georgia, serif;
-font-size: 28px;
-font-style: italic;
-// width: 500px;
-margin: 0.25em 0;
-padding: 0.25em 40px;
-line-height: 1.45;
-position: relative;
-// color: #383838;
+  border-left: 0px;
+  font-family: Georgia, serif;
+  font-size: 28px;
+  font-style: italic;
+  // width: 500px;
+  margin: 0.25em 0;
+  padding: 0.25em 40px;
+  line-height: 1.45;
+  position: relative;
+  // color: #383838;
 }
 
 blockquote:before {
-display: block;
-content: "\201C";
-font-size: 80px;
-position: absolute;
-left: -20px;
-top: -20px;
-// color: #7a7a7a;
+  display: block;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  // color: #7a7a7a;
 }
 
 blockquote cite {
-color: #999999;
-font-size: 14px;
-display: block;
-margin-top: 5px;
+  color: #999999;
+  // font-size: 14px;
+  display: block;
+  margin-top: 5px;
+  margin-left: 30px;
 }
  
 blockquote cite:before {
