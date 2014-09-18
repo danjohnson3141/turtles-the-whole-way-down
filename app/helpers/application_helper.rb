@@ -40,4 +40,13 @@ module ApplicationHelper
     end
   end
 
+  def quote
+    quote = { one: 
+              {line1: "There are only two hard problems in Computer Science...", line2: "Cache invalidation and naming things.", author: "Phil Karlton"},
+              two: 
+              {line1: "Hofstadter's Law: It always takes longer than you expect, ", line2: "even when you take into account Hofstadter's Law.", author: "Douglas Hofstadter"}
+            }
+    quote_index = quote.keys.sample
+    "<p>#{quote[quote_index][:line1]}</p><p>#{quote[quote_index][:line2]}<p class='quote'>- #{quote[quote_index][:author]}</p>"
+  end
 end
