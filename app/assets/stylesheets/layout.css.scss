@@ -10,25 +10,19 @@
 }
 
 .project {
-	padding: 5px 5px 5px 5px;
-	height: 160px;
+	padding: 5px 10px 5px 10px;
+	min-height: 170px;
     margin-top: 15px;
     background-color: #edf3f4;
     border-radius: 5px;
 }
 
-.project:hover {
-    background-color: #e3f0f2;
-}
+// .project:hover {
+//     background-color: #e3f0f2;
+// }
 
-.project:hover
-{
-    text-decoration: none;
-    color: #000;
-}
-
-/*a:hover, a:visited, a:link, a:active
-{
-    text-decoration: none;
-    color: #000;
-}*/
+// .project:hover
+// {
+//     text-decoration: none;
+//     color: #000;
+// }

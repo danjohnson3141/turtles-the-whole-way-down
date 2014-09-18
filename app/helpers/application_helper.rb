@@ -1,7 +1,7 @@
 module ApplicationHelper
   def site_name
     # Change the value below between the quotes.
-    "A Portfolio Site for Dan Johnson"
+    "Development Portfolio | Dan Johnson"
     # "Turtles The Whole Way Down | A Portfolio Site for Dan Johnson"
   end
 

@@ -1,0 +1,43 @@
+<% provide(:title, 'Other') %>
+<h1>Other Development Related Information</h1>
+<p>Software development is more than just writing eligent code. I wear many hats during a project including:</p>
+<ul><li>Database Architect</li>
+<li>Documenter</li>
+<li>Test Writer</li>
+<li>Project Manager</li>
+<li>Team Leader/Team Morale Booster</li></ul>
+<p>Below are some examples of non-programming tasks I have been responsible for.</p>
+<section id="body">
+  <div id="projects">
+    
+	<div class="project">
+		<%= link_to image_tag("E365ERD.png", size: "170x150", alt: "Bluehawk", class: "left"), "/assets/E365ERD.png" %>
+		<p><strong><%= link_to "Evanta365 | Data Architect", "/assets/E365ERD.png" %></a></strong></p>
+		<p>The Evanta365 database has 75 tables, 740 columns, 370 indexes, and 231 foreign keys. Designing and maintaining this database was a challenge due to its highly relational requirements. Columns near the top of the relational tree can have as many as 60 foreign key dependencies cascading down. All tables were created and updated using Rails migrations. Realistic and sometimes entertaining seed data for each table was available through a complex suite of </p>
+	</div>
+	
+	<div class="project">
+		<a href="https://www.cortina-systems.com"><%= image_tag("cortina.png", size: "180x150", alt: "Cortina", class: "right") %></a>
+		<p><strong><a href="https://www.cortina-systems.com">Cortina Systems | Reverse engineer and migrate database to Joomla CMS</a></strong></p>
+		<p>My responsiblities during the project to update Cortina's outdated website from a home-grown Perl implementation to Joomla involved migrating data from their MySQL database. No one involved in the original database design was still with the company so the first step was to reverse engineer the structure. I found unused tables, poor normalization, missing foreign keys, and insufficient indexing.</p>
+		<p>New tables were created, addressing problems with the original model, and migration scripts were used to move the data to its new home.</p>
+	</div>
+	
+	<a href="http://whispering-plateau-8460.herokuapp.com/">
+		<div class="project">
+			<p><%= image_tag("api-doc.png", size: "180x150", alt: "API Documentation", class: "left") %>
+			<p><strong>Evanta365 | API Documentation</strong></p>
+			<p>In order to communicate API functionality to the desktop, iOS, and Android front-end developers an API documentation website was created. This site, developed in rails using <a href="https://github.com/gollum/gollum">Gollum</a>. All documentation is stored in a git repository for easy change management.</p>
+		</div>
+	</a>
+	<a href="http://portland.sundayassembly.com/">
+		<div class="project">
+			<p><%= image_tag("sa.png", size: "180x150", alt: "refinery", class: "right") %>
+			<p><strong>Volunteer Work | Portland Sunday Assembly</strong></p>
+			<p>I maintain the website for the group Portland Sunday Assembly. Since taking over maintenance of this site I've added Facebook, Twitter, Google+, Paypal, and Meetup.com integration.</p>
+		</div>
+	</a>
+	</div>
+</section>
+<!-- <p>Find me in app/views/pages/ruby.html.erb</p> -->
+<p>Thanks for looking</p>
