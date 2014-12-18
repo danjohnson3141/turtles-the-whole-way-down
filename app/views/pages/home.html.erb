@@ -9,7 +9,7 @@
       border: 0;
       z-index: 10;
       width: 7%;
-    }
+}
 .slides {
   margin-bottom: 0px;
   min-height: 400px;
@@ -27,12 +27,12 @@
   text-shadow: black 0em 0em 0em;
 }
 .slide-1 {
-  background-image: url('<%= image_path("turtles3.jpg") %> ');
+  background-image: url('<%= image_path("pile-of-circuit-boards.jpg") %> ');
   background-position: 0% 40%;
 }
 
 .slide-2 {
-  background-image: url('<%= image_path("bikeshedding1.jpg") %> ');
+  background-image: url('<%= image_path("pile-of-circuit-boards2.jpg") %> ');
   background-position: 0% 40%;
   font-size: 20px;
 }
@@ -42,7 +42,7 @@
   font-size: 38px;
 }
 .slide-4 {
-  background-image: url('<%= image_path("dashing-wide.png") %> ');
+  background-image: url('<%= image_path("hd.jpeg") %> ');
   background-position: 0% 40%;
   font-size: 38px;
   background-position: 0% 0%;
@@ -53,18 +53,7 @@
   font-size: 38px;
   background-position: 0% 0%;
 }
-.slide-6 {
-  background-image: url('<%= image_path("reading-list1.png") %> ');
-  background-position: 0% 40%;
-  font-size: 38px;
-  background-position: 0% 0%;
-}
-.slide-7 {
-  background-image: url('<%= image_path("evanta365.png") %> ');
-  background-position: 0% 40%;
-  font-size: 38px;
-  background-position: 0% 0%;
-}
+
 .jumbotron:hover {
   background-color:#000;
   opacity:1;
@@ -84,13 +73,13 @@
   width: auto;
 }
 .div-right {
-  margin-top: -20px;
-  font-size: 14px;
+  margin-top: -32px;
+  font-size: 16px;
   float: right;
-  width: 334px;
+  width: 434px;
   border-radius: 8px;
-  background: rgba(12, 39, 1, 0.5);
-  padding: 5px 5px 0px 5px;
+  background: rgba(12, 39, 1, 0.75);
+  padding: 5px 5px 0px 10px;
   text-shadow: black 0.0em 0.0em 0.0em;
 }
 </style>
@@ -102,23 +91,25 @@
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
-      <li data-target="#myCarousel" data-slide-to="5"></li>
-      <li data-target="#myCarousel" data-slide-to="6"></li>
+      <!-- <li data-target="#myCarousel" data-slide-to="4"></li> -->
    </ol>   
    <!-- Carousel items -->
    <div class="carousel-inner">
       <div class="item active slides slide-1">
-         <h2>Turtles the whole way down</h2>
-         <div class="div-right">
-  <p>"Turtles the whole way down" is a jocular expression of the <a href="http://en.wikipedia.org/wiki/Infinite_regress" class="jumbotron_link">infinite regress</a> problem in cosmology posed by the "<a href="http://en.wikipedia.org/wiki/Unmoved_mover" class="jumbotron_link">unmoved mover</a>" paradox. The metaphor in the anecdote represents a popular notion of the myth that Earth is actually flat and is supported on the back of a World Turtle, which itself is propped up by a chain of larger and larger turtles. Questioning what the final turtle might be standing on, the anecdote humorously concludes that it is "turtles the whole way down".</p>
-  </div>
+        <h2>Bit by Bit Recycling</h2>
+        <div class="div-right">
+          <h2>More than computers</h2>
+          <p>We take almost everything electronic with a very short list of items we cannot accept: 
+          <ul><li>major household appliances,</li><li>air conditioners</li> <li>dehumidifiers</li><li>vacuums</li><li>microwave ovens</li>
+          <li>copiers</li></ul>We are also not able to reycle large amounts of plastic (like VCR tapes and floppy disks). Please contact us via email or at 503-449-8357 for more details.</p>
+        </div>
       <p><a class="btn btn-primary btn-lg" role="button" style="margin-top: 221px;">Learn more &raquo;</a></p>
          <!-- <div class="carousel-caption">This Caption 1</div> -->
       </div>
       <div class="item slides slide-2">
-         <h2>NO Bikeshedding!</h2>
-         <p>Bikeshedding - the term was coined as a metaphor to illuminate <a href="http://en.wikipedia.org/wiki/Parkinson%27s_Law_of_Triviality" title="Parkinson's Law of Triviality">Parkinson’s Law of Triviality</a>. Parkinson observed that a committee whose job is to approve plans for a nuclear power plant may spend the majority of its time on relatively unimportant but easy-to-grasp issues, such as what materials to use for the staff bikeshed, while neglecting the design of the power plant itself, which is far more important but also far more difficult to criticize constructively. It was popularized in the <a href="http://en.wikipedia.org/wiki/Berkeley_Software_Distribution">Berkeley Software Distribution</a> community and has spread from there to the software industry at large.</p>
+         <h2>Let your used technology help others</h2>
+         <p>A portion of refurbished computers are donated to local charities.</p>
+         <p>If you are a local area student you can earn a free computer from Bit by Bit by volunteering 16 hours of your time with us or another local charity</p>
          <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
       </div>
       <div class="item slides slide-3">
@@ -127,17 +118,6 @@
       </div>
       <div class="item slides slide-4">
         <h1 style="top-margin: 100px; text-align: center;">Dashing Dashboard</h1>
-      </div>
-      <div class="item slides slide-5">
-      </div>
-      <div class="item slides slide-6">
-      </div>
-      <div class="item slides">
-        <img src='<%= image_path("evanta365.png") %>' class="slide-img" style="float: left; height: 400px; width: auto; margin-right: 20px;">
-        <h2 class="normal-text">Evanta365</h2>
-        <p class="normal-text">A combination of LinkedIn, CrowdCompass, Twitter, and SurveyMonkey</p>
-        <p class="normal-text">API serves data to web, iOS, and Android applications</p>
-        <p class="normal-text">API Features: Multilingual, Multitenant, Versioned, Secure, RESTful</p>
       </div>
    </div>
    <!-- Carousel nav -->

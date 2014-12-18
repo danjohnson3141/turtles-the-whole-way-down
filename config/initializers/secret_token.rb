@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Turtles::Application.config.secret_key_base = '7ca4d04d0367df9589863a949c51754253f5d09d0ae4bcea88ec7f47c52b9135db5f1c21728be3fbf2eb3040ffe5eea13cb195ee25a0372202dbc9d1ed6cce06'
+BitByBit::Application.config.secret_key_base = '7ca4d04d0367df9589863a949c51754253f5d09d0ae4bcea88ec7f47c52b9135db5f1c21728be3fbf2eb3040ffe5eea13cb195ee25a0372202dbc9d1ed6cce06'

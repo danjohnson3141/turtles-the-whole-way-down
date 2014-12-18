@@ -1,14 +1,14 @@
 module ApplicationHelper
   def site_name
     # Change the value below between the quotes.
-    "Development Portfolio | Dan Johnson"
+    "Bit by Bit Electronic Recycling | Transforming Used Technology Into Opportunity"
     # "Turtles The Whole Way Down | A Portfolio Site for Dan Johnson"
   end
 
   def site_url
     if Rails.env.production?
       # Place your production URL in the quotes below
-      "http://http://www.turtlesthewholewaydown.com/"
+      "http://www.bitbybitrecycling.com/"
     else
       # Our dev & test URL
       "http://localhost:3000"
@@ -22,12 +22,12 @@ module ApplicationHelper
 
   def meta_description
     # Change the value below between the quotes.
-    "Portfolio and Information Site for Dan Johnson"
+    "Recycling used computers and electronics"
   end
 
   def meta_keywords
     # Change the value below between the quotes.
-    "ruby on rails php developer portland experienced"
+    "recycling"
   end
 
   # Returns the full title on a per-page basis.
