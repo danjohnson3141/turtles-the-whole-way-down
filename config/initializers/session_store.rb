@@ -1,3 +1,3 @@
 # Be sure to restart your server when you modify this file.
 
-Turtles::Application.config.session_store :cookie_store, key: '_turtles_session'
+BitByBit::Application.config.session_store :cookie_store, key: '_bitbybit_session'
