@@ -23,18 +23,21 @@
 		<p>New tables were created, addressing problems with the original model, and migration scripts were used to move the data to its new home.</p>
 	</div>
 	
-	<a href="http://whispering-plateau-8460.herokuapp.com/">
+	
+	<div class="project">
+		<a href="http://whispering-plateau-8460.herokuapp.com/">
+		<%= image_tag("api-doc.png", size: "180x150", alt: "API Documentation", class: "left") %>
+
+		<p><strong>Evanta365 | API Documentation</strong></p></a>
+		<p>In order to communicate API functionality to the desktop, iOS, and Android front-end developers an API documentation website was created. This site, developed in rails using <a href="https://github.com/gollum/gollum">Gollum</a>. All documentation is stored in a git repository for easy change management.</p>
+	</div>
+
+	
 		<div class="project">
-			<p><%= image_tag("api-doc.png", size: "180x150", alt: "API Documentation", class: "left") %>
-			<p><strong>Evanta365 | API Documentation</strong></p>
-			<p>In order to communicate API functionality to the desktop, iOS, and Android front-end developers an API documentation website was created. This site, developed in rails using <a href="https://github.com/gollum/gollum">Gollum</a>. All documentation is stored in a git repository for easy change management.</p>
-		</div>
-	</a>
-	<a href="http://portland.sundayassembly.com/">
-		<div class="project">
-			<p><%= image_tag("sa.png", size: "180x150", alt: "refinery", class: "right") %>
-			<p><strong>Volunteer Work | Portland Sunday Assembly</strong></p>
+			<a href="http://portland.sundayassembly.com/"><%= image_tag("sa.png", size: "180x150", alt: "refinery", class: "right") %>
+			<p><strong>Volunteer Work | Portland Sunday Assembly</strong></p></a>
 			<p>I maintain the website for the group Portland Sunday Assembly. Since taking over maintenance of this site I've added Facebook, Twitter, Google+, Paypal, and Meetup.com integration.</p>
+			<p>The site has recently been migrated from Wordpress to <a href="http://www.sundayassemblypdx.org/">Nationbuilder</a> which is a platform that caters more to nonprofits and charities.</p>
 		</div>
 	</a>
 	</div>
