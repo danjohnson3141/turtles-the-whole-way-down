@@ -12,9 +12,12 @@
 .project {
 	padding: 5px 10px 5px 10px;
 	min-height: 170px;
-    margin-top: 15px;
-    background-color: #edf3f4;
-    border-radius: 5px;
+  margin-top: 15px;
+  background-color: #edf3f4;
+  border-radius: 5px;
+}
+.project.pending {
+    background-color: whitesmoke;
 }
 blockquote {
   border-left: 0px;
@@ -48,10 +51,10 @@ blockquote cite {
 }
  
 blockquote cite:before {
-content: "\2014 \2009";
+  content: "\2014 \2009";
 }
 .quote {
-    margin-left: 140px;
+  margin-left: 140px;
 }
 
 // .project:hover
