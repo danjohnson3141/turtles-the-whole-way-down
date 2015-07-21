@@ -25,7 +25,7 @@ Build the scene and rotate on hover
 
 .scene {
 	width: 260px;
-	height: 360px;
+	height: 420px;
 	margin: 30px;
 	float: left;
 	-webkit-perspective: 1000px;
@@ -35,7 +35,7 @@ Build the scene and rotate on hover
 
 .movie {
 	width: 260px;
-	height: 360px;
+	height: 420px;
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
@@ -61,7 +61,7 @@ Transform and style the two planes
 .movie .info {
 	position: absolute;
 	width: 260px;
-	height: 360px;
+	height: 420px;
 	background-color: #fff;
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
@@ -143,6 +143,16 @@ Movie information
 	border-top: 10px solid #555;*/
 }
 
+.info ul {
+	padding: .6em 1.4em;
+	margin: 2px 0 0;
+	color: #666;
+}
+
+.info li {
+	margin-left: 15px;
+}
+
 /*************************************
 Generate "lighting" using box shadows
 **************************************/
@@ -196,10 +206,12 @@ Posters and still images
 
 .scene:nth-child(2) .info header {
 	background-image: url(../img/still02.jpg);
+	background: #00a3e4;
 }
 
 .scene:nth-child(3) .info header {
 	background-image: url(../img/still03.jpg);
+	background: green;
 }
 
 /*************************************
@@ -270,15 +282,27 @@ Media Queries
 						<div class="movie" onclick="return true">
 							<div class="poster"></div>
 							<div class="info">
-								<header>
-									<h1>Vengeance Valley</h1>
-									<span class="year">1951</span>
-									<span class="rating">NR</span>
-									<span class="duration">83 minutes</span>
+								<header style="height: 60px">
+									<h1>Evanta365</h1>
+									<span class="year">2013-present</span>
+									<span class="rating">Rails API</span>
+									<span class="rating">Backbone</span>
+									<span class="rating">Globalized</span>
+									<span class="rating">Multi Tenent</span>
 								</header>
-								<p>
-									A cattle baron takes in an orphaned boy and raises him, causing his own son to resent the boy. As they get older the resentment festers into hatred, and eventually the real son frames his stepbrother for fathering an illegitimate child that is actually his, seeing it as an opportunity to get his half-brother out of the way so he can have his father's empire all to himself.
-								</p>
+								<p>A highly social event application for the web, iOS, and Android</p>
+								<p>Using Evanta365 an event attendee can:</p>
+								<ul>
+								<li>View the event agenda and add sessions to their schedule</li>
+								<li>Connect with other attendees (similar to FaceBook friending or following on Twitter</li>
+								<li>See speakers, their bios, ask questions</li>
+								<li>Join or create groups of like-minded attendees</li>
+								<li>Participate in discussions, likes posts, add comments, send private messages</li>
+								<li>Enter drawings for luxury prizes provided by event sponsors</li>
+								<li>Take part in the Leaderboard which awards points for various in-app activities (gamification)</li>
+								<li>Complete evaluations and surveys</li>
+								<li>Stay in contact with connections after the event ends. Continue to collaborate and exchange ideas</li>
+								</ul>
 							</div>
 						</div>
 					</li>
@@ -288,14 +312,12 @@ Media Queries
 							<div class="poster"></div>
 							<div class="info">
 								<header>
-									<h1>The Gold Rush</h1>
-									<span class="year">1925</span>
-									<span class="rating">NR</span>
-									<span class="duration">95 minutes</span>
+									<h1>Reading List</h1>
+									<span class="year">2013-2014</span>
+									<span class="rating">Ruby</span>
+									<span class="rating">Active Admin</span>
 								</header>
-								<p>
-									The Tramp travels to the Yukon to take part in the Klondike Gold Rush. He gets mixed up with some burly characters and falls in love with the beautiful Georgia. He tries to win her heart with his singular charm.
-								</p>
+								<p>A sample reading list application written in Ruby on Rails and Bootstrap. Admin interface created using the Active-Admin gem.</p>
 							</div>
 						</div>
 					</li>
