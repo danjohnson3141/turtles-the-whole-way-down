@@ -10,8 +10,8 @@ body {
 }
 
 .wrapper {
-	/*margin: 0 auto 100px auto;*/
-	max-width: 960px;
+	margin: 0 auto 100px auto;
+	/*max-width: 960px;*/
 }
 
 .stage {
@@ -24,7 +24,7 @@ Build the scene and rotate on hover
 **************************************/
 
 .scene {
-	width: 260px;
+	width: 300px;
 	height: 420px;
 	margin: 30px;
 	float: left;
@@ -34,14 +34,14 @@ Build the scene and rotate on hover
 }
 
 .movie {
-	width: 260px;
+	width: 300px;
 	height: 420px;
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-	-webkit-transform: translateZ(-130px);
-	-moz-transform: translateZ(-130px);
-	transform: translateZ(-130px);
+	-webkit-transform: translateZ(-150px);
+	-moz-transform: translateZ(-150px);
+	transform: translateZ(-150px);
 	-webkit-transition: -webkit-transform 350ms;
 	-moz-transition: -moz-transform 350ms;
 	transition: transform 350ms;
@@ -60,7 +60,7 @@ Transform and style the two planes
 .movie .poster, 
 .movie .info {
 	position: absolute;
-	width: 260px;
+	width: 300px;
 	height: 420px;
 	background-color: #fff;
 	-webkit-backface-visibility: hidden;
@@ -69,17 +69,17 @@ Transform and style the two planes
 }
 
 .movie .poster  {
-	-webkit-transform: translateZ(130px);
-	-moz-transform: translateZ(130px);
-	transform: translateZ(130px);
+	-webkit-transform: translateZ(150px);
+	-moz-transform: translateZ(150px);
+	transform: translateZ(150px);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .movie .info {
-	-webkit-transform: rotateY(90deg) translateZ(130px);
-	-moz-transform: rotateY(90deg) translateZ(130px);
-	transform: rotateY(90deg) translateZ(130px);
+	-webkit-transform: rotateY(90deg) translateZ(150px);
+	-moz-transform: rotateY(90deg) translateZ(150px);
+	transform: rotateY(90deg) translateZ(150px);
 	border: 1px solid #B8B5B5;
 	font-size: 0.75em;
 }
@@ -90,7 +90,7 @@ Shadow beneath the 3D object
 
 .csstransforms3d .movie::after {
 	content: '';
-	width: 260px;
+	width: 300px;
 	height: 260px;
 	position: absolute;
 	bottom: 0;
@@ -98,9 +98,9 @@ Shadow beneath the 3D object
 	-webkit-transform-origin: 100% 100%;
 	-moz-transform-origin: 100% 100%;
 	transform-origin: 100% 100%;
-	-webkit-transform: rotateX(90deg) translateY(130px);
-	-moz-transform: rotateX(90deg) translateY(130px);
-	transform: rotateX(90deg) translateY(130px);
+	-webkit-transform: rotateX(90deg) translateY(150px);
+	-moz-transform: rotateX(90deg) translateY(150px);
+	transform: rotateX(90deg) translateY(150px);
 	-webkit-transition: box-shadow 350ms;
 	-moz-transition: box-shadow 350ms;
 	transition: box-shadow 350ms;
@@ -196,23 +196,13 @@ Posters and still images
 }
 
 .scene:nth-child(3) .poster {
-  background-image: url(<%= image_path("reading_list.jpeg") %>);
+  background-image: url(<%= image_path("reading-list1a.png") %>);
+  background-size: 100% 101%;
 }
 
-.scene:nth-child(1) .info header {
-	/*background-image: url(<%= image_path("source-code1.jpg") %>);*/
-	background: grey;
-}
-
-.scene:nth-child(2) .info header {
-	background-image: url(../img/still02.jpg);
-	background: #00a3e4;
-}
-
-.scene:nth-child(3) .info header {
-	background-image: url(../img/still03.jpg);
-	background: green;
-}
+.scene:nth-child(1) .info header { background: grey; }
+.scene:nth-child(2) .info header { background: #00a3e4; }
+.scene:nth-child(3) .info header { background: green; }
 
 /*************************************
 Fallback
@@ -286,7 +276,7 @@ Media Queries
 									<h1>Evanta365</h1>
 									<span class="year">2013-present</span>
 									<span class="rating">Rails API</span>
-									<span class="rating">Backbone</span>
+									<span class="rating">Backbone</span><br>
 									<span class="rating">Globalized</span>
 									<span class="rating">Multi Tenent</span>
 								</header>
@@ -317,6 +307,7 @@ Media Queries
 									<span class="rating">Ruby</span>
 									<span class="rating">Active Admin</span>
 								</header>
+								<p><a href="http://reading-lister.herokuapp.com/">Reading List</a></p>
 								<p>A sample reading list application written in Ruby on Rails and Bootstrap. Admin interface created using the Active-Admin gem.</p>
 							</div>
 						</div>
