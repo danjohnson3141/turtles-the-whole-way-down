@@ -132,11 +132,16 @@ ul {
   /*margin-top: 120px;*/
   font-size: 32px;
 }
-
-@media screen and (max-width: 40.75em){
+.about-e365 {
+  margin-top: -15px;
+}
+@media screen and (max-width: 55.75em){
   .quote_p {
     /*margin-top: 40px;*/
     font-size: 18px;
+  }
+  .about-e365 {
+    display: none;
   }
 }
 </style>
@@ -187,6 +192,7 @@ ul {
 
       <div class="item slides slide-6">
         <img src='<%= image_path("evanta365.png") %>' class="slide-img" style="float: left; height: 360px; width: auto; margin-right: 20px;">
+        <div class="about-e365">
         <h2 class="normal-text">Evanta365 | Social Event Platform for web, iOS, and Android</h2>
         <p class="normal-text sml">A combination of LinkedIn, CrowdCompass, Twitter, and SurveyMonkey. API serves data to web, iOS, and Android applications. Features: Multilingual, Multitenant, Versioned, Secure, RESTful.</p>
         <p class="normal-text sml"><strong>Using Evanta365 an event attendee can:</strong></p>
@@ -200,6 +206,7 @@ ul {
           <li class="normal-text sml">Take part in the Leaderboard which awards points for various in-app activities (gamification)</li>
           <li class="normal-text sml">Complete evaluations and surveys</li>
         </ul>
+        </div>
       </div>
    </div>
    <!-- Carousel nav -->
