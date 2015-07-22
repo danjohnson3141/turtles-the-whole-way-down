@@ -10,34 +10,26 @@
 <section id="body">
   <div id="projects">
     
-    	<div class="project">
-<<<<<<< HEAD
-				<%= link_to image_tag("bh-dashboard.png", size: "170x150", alt: "Bluehawk", class: "left") %>
-				<p><strong><%= link_to "Bluehawk CMS/CRM", "bluehawk" %></strong></p>
-				<p>Bluehawk is an inhouse created combination Content Management System and Customer Relationship Management system used by Evanta. I helps sales people to stay in contact with event attendess, manage sponsors, and engage the event's governing body and speakers. It also gives the content department an easy way to update and maintain the corporate website.</p>
-=======
-				<%= image_tag("bh-dashboard.png", size: "170x150", alt: "Bluehawk", class: "left") %>
-				<p><strong>Bluehawk CMS/CRM</strong></p>
-				<p>Bluehawk is a custom built customer relationship manager and content management system used by Evanta. It was written in PHP in the Zend framework and using MySQL and MongoDB for storage. Development of this monolithic application began in 2011. Development continues to this day albiet at a slower pace. Starting in 2013 all new development uses a Ruby on Rails RESTful API for business logic and the existing front-end for presentation.</p>
->>>>>>> 66b064d9b180c9c29e19a60ab3fef47bce7e7f03
-		</div>
-	</a>
-	<a href="https://www.cortina-systems.com/index.php">
-		<div class="project">
-			<%= image_tag("cortina.png", size: "180x150", alt: "Cortina", class: "right") %>
-			<p><strong>Cortina Systems Corporate Website</strong></p>
-			<p>Cortina Systems website had not been updated for over five years and was looking very dated. As part of this project it was moved to Joomla CMS. The Joomla project was heavily modified to provide a unique and modern look. All data was migrated from the legacy system as well.</p>
-		</div>
-	</a>
-	<a href="http://www.evanta.com/">
-		<div class="project">
-			<p><%= image_tag("evanta.png", size: "180x150", alt: "fat-free-crm", class: "left") %>
-			<p><strong>Evanta Homepage</strong></p>
-			<p>This is Evanta's main webpage. All content is derived from Bluehawk, our in-house, custom developed, content management and customer relation system.</p>
-			<p></p>
-		</div>
-	</a>
+	<div class="project">
+		<%= link_to image_tag("bh-dashboard.png", size: "170x150", alt: "Bluehawk", class: "left") %>
+		<p><strong><%= link_to "Bluehawk CMS/CRM", "bluehawk" %></strong></p>
+		<p>Bluehawk is an inhouse created combination Content Management System and Customer Relationship Management system used by Evanta. I helps sales people to stay in contact with event attendess, manage sponsors, and engage the event's governing body and speakers. It also gives the content department an easy way to update and maintain the corporate website.</p>
+	</div>
+
+	<div class="project">
+		<%= image_tag("cortina.png", size: "180x150", alt: "Cortina", class: "right") %>
+		<p><strong><a href="https://www.cortina-systems.com/index.php">Cortina Systems Corporate Website (Now called Inphi)</strong></a></p>
+		<p>Cortina Systems website had not been updated for over five years and was looking very dated. As part of this project it was moved to Joomla CMS. The Joomla project was heavily modified to provide a unique and modern look. All data was migrated from the legacy system as well.</p>
+	</div>
+	
+	<div class="project">
+		<p><%= image_tag("evanta.png", size: "180x150", alt: "fat-free-crm", class: "left") %>
+		<p><a href="http://www.evanta.com/"><strong>Evanta Homepage</strong></a></p>
+		<p>This is Evanta's main webpage. All content is derived from Bluehawk, our in-house, custom developed, content management and customer relation system.</p>
+		<p></p>
+	</div>
+	
   </div>
 </section>
 <!-- <p>Find me in app/views/pages/ruby.html.erb</p> -->
-<p>Thanks for looking</p>
+<p class="thanks">Thanks for looking</p>
