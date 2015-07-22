@@ -138,7 +138,7 @@ Movie information
 	padding: .6em 1.4em;
 	margin: 2px 0 0;
 	/*font-weight: 700;*/
-	color: #666;
+	color: #000;
 	/*line-height: 1.4em;
 	border-top: 10px solid #555;*/
 }
@@ -146,7 +146,7 @@ Movie information
 .info ul {
 	padding: .6em 1.4em;
 	margin: 2px 0 0;
-	color: #666;
+	color: #000;
 }
 
 .info li {
@@ -187,12 +187,12 @@ Generate "lighting" using box shadows
 Posters and still images
 **************************************/
 
-.scene:nth-child(1) .movie .poster {
-  background-image: url(<%= image_path("dashboard.png") %>);
+.scene:nth-child(1) .poster {
+  background-image: url(<%= image_path("evanta365.jpeg") %>);
 }
 
-.scene:nth-child(2) .poster {
-  background-image: url(<%= image_path("evanta365.jpeg") %>);
+.scene:nth-child(2) .movie .poster {
+  background-image: url(<%= image_path("dashboard.png") %>);
 }
 
 .scene:nth-child(3) .poster {
@@ -200,9 +200,23 @@ Posters and still images
   background-size: 100% 101%;
 }
 
-.scene:nth-child(1) .info header { background: grey; }
-.scene:nth-child(2) .info header { background: #00a3e4; }
+.scene:nth-child(4) .poster {
+  background-image: url(<%= image_path("evanta365_admin.png") %>);
+}
+
+.scene:nth-child(5) .poster {
+  background-image: url(<%= image_path("turtles-screenshot.png") %>);
+}
+
+.scene:nth-child(6) .poster {
+  background-image: url(<%= image_path("fat-free-crm1.png") %>);
+}
+.scene:nth-child(1) .info header { background: #00a3e4; }
+.scene:nth-child(2) .info header { background: grey; }
 .scene:nth-child(3) .info header { background: green; }
+.scene:nth-child(4) .info header { background: #38bb15; }
+.scene:nth-child(5) .info header { background: #2F5402; }
+.scene:nth-child(6) .info header { background: #1E4262; }
 
 /*************************************
 Fallback
@@ -221,7 +235,9 @@ Media Queries
 		margin: 30px auto 60px;
 	}
 }
-
+.please_note {
+	color: cadetblue !important;
+}
 </style>
 
 <html lang="en" class="no-js">
@@ -246,36 +262,16 @@ Media Queries
 			</header>
 			<div class="wrapper">
 				<ul class="stage clearfix">
-					
-					<li class="scene">
-						<div class="movie" onclick="return true">
-							<div class="poster"></div>
-							<div class="info">
-
-								<header>
-								
-									<h1>Devnomicon Dashboard</h1>
-									<span class="year">2014</span>
-									<span class="rating">Ruby</span>
-									<span class="rating">Dashing</span>
-								</header>
-								<p><a href="http://www.devnomicon.com/"><strong>www.devnomicon.com</strong></a></p>
-								<p>A dashboard application written in Ruby and using the Dashing gem by Shopify. Dashing is a Sinatra based framework that lets you build beautiful dashboards. It looks especially great on TVs.</p>
-								<p>Included are many of the premade widgets as well as some of my own.</p>
-								<p>I've also added a toggle to view a version that looks best in 1080p.</p>
-							</div>
-						</div>
-					</li>
-					
-
 					<li class="scene">
 						<div class="movie" onclick="return true">
 							<div class="poster"></div>
 							<div class="info">
 								<header style="height: 60px">
-									<h1>Evanta365</h1>
+									<h1>Evanta365 Connect</h1>
 									<span class="year">2013-present</span>
-									<span class="rating">Rails API</span>
+									<span class="rating">Ruby</span>
+									<span class="rating">Rails</span>
+									<span class="rating">API</span>
 									<span class="rating">Backbone</span><br>
 									<span class="rating">Globalized</span>
 									<span class="rating">Multi Tenent</span>
@@ -293,6 +289,29 @@ Media Queries
 								<li>Complete evaluations and surveys</li>
 								<li>Stay in contact with connections after the event ends. Continue to collaborate and exchange ideas</li>
 								</ul>
+								<p class="please_note"><strong>Please note:</strong> This is an invitation only application so a demo is not available</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+
+								<header>
+									<h1>Devnomicon Dashboard</h1>
+									<span class="year">2014</span>
+									<span class="rating">Ruby</span>
+									<span class="rating">Sinatra</span>
+									<span class="rating">Dashing</span>
+								</header>
+								<p><a href="http://www.devnomicon.com/"><strong>www.devnomicon.com</strong></a></p>
+								<p>A dashboard application written in Ruby and using the Dashing gem by Shopify. Dashing is a Sinatra based framework that lets you build beautiful dashboards. It looks especially great on TVs.</p>
+								<p>Included are many of the premade widgets as well as some of my own.</p>
+								<p>I've also added a toggle to view a version that looks best in 1080p.</p>
+								<p><%= link_to "visit www.devnomicon.com".html_safe, "http://www.devnomicon.com/", class: "btn btn-info" %></p>
+								<p class="please_note"><strong>Please note:</strong> This is hosted on a free Heroku account and may take a few moments to wake up.</p>
 							</div>
 						</div>
 					</li>
@@ -305,10 +324,73 @@ Media Queries
 									<h1>Reading List</h1>
 									<span class="year">2013-2014</span>
 									<span class="rating">Ruby</span>
+									<span class="rating">Rails</span>
 									<span class="rating">Active Admin</span>
 								</header>
 								<p><a href="http://reading-lister.herokuapp.com/">Reading List</a></p>
-								<p>A sample reading list application written in Ruby on Rails and Bootstrap. Admin interface created using the Active-Admin gem.</p>
+								<p>A sample reading list application written in Ruby on Rails and Bootstrap.</p>
+								<p>This started life as a CodeSchool "Soup-to-Bits" excercise but I've been continueing to build on the idea of an app where you can store books you've read or want to read. I'm adding functionality to allow the app to be used for book clubs administration.</p>
+								<p>An admin interface created using the Active-Admin gem is also included.</p>
+								<p><%= link_to "Visit Reading List".html_safe, "http://reading-lister.herokuapp.com/", class: "btn btn-info" %></p>
+								<p class="please_note"><strong>Please note:</strong> This is hosted on a free Heroku account and may take a few moments to wake up.</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+								<header>
+									<h1>Evanta365 Connect Administration</h1>
+									<span class="year">2015</span>
+									<span class="rating">Ruby</span>
+									<span class="rating">Rails</span>
+									<span class="rating">Backbone</span>
+								</header>
+								<p>Say some stuff about admin.</p>
+								<p>Bacon ipsum dolor amet biltong t-bone frankfurter, short ribs pastrami capicola picanha venison boudin hamburger. Leberkas tenderloin prosciutto sirloin jowl salami, chuck picanha. Shoulder flank tri-tip, beef drumstick jerky jowl t-bone. Pastrami landjaeger filet mignon kielbasa. Drumstick pancetta strip steak brisket, meatball boudin chuck pork belly tongue filet mignon flank tri-tip turkey kielbasa.</p>
+								<p class="please_note"><strong>Please note:</strong> This is a private, in-house, application so demonstrations are not available via this portfolio.</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+								<header style="height: 60px">
+									<h1>Turtles the Whole Way Down</h1>
+									<span class="year">2014 - present</span>
+									<span class="rating">Ruby</span>
+									<span class="rating">Rails</span>
+									<span class="rating">High Voltage</span>
+									<span class="rating">Bootstrap</span>
+								</header>
+								<p>You're looking at it!</p>
+								<p>This is a rewrite of my old PHP based portfolio site (still available at <a href="http://danjohnsonprogramming.com/">http://danjohnsonprogramming.com/</a>).</p>
+								<p>It is a place where I intend to show of some of my work and tell people a bit about myself. It is a constant work-in-progress and I wish I had more time to work on it.</p>
+								<p>I am primarily focused on back-end development so a site like this doesn't actually come naturally to me. Still, I feel that I can put together something halfway decent, frontend-wise, when necessary.</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="scene">
+						<div class="movie" onclick="return true">
+							<div class="poster"></div>
+							<div class="info">
+								<header style="height: 60px">
+									<h1>Fat Free CRM Implementation</h1>
+									<span class="year">2014</span>
+									<span class="rating">Ruby</span>
+									<span class="rating">Rails</span>
+									<span class="rating">Fat Free CRM Gem</span>
+								</header>
+								<p>This is an implementation of the open source CRM package <a href="http://www.fatfreecrm.com/">Fat Free CRM</a>.</p>
+								<p>I evaluated it as an open source alternative to Salesforce.</p>
+								<p>I am very impressed with the code under the hood as well as the look and feel and overall usability. In the end we opted for Salesforce but I will definitely keep this gem in mind for future CRM projects.</p>
+								<p><%= link_to "Visit Fat Free CRM".html_safe, "http://fat-free-crm-3141.herokuapp.com/", class: "btn btn-info" %></p>
+								<p class="please_note"><strong>Please note:</strong> This is hosted on a free Heroku account and may take a few moments to wake up.</p>
 							</div>
 						</div>
 					</li>

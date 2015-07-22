@@ -3,10 +3,10 @@ Turtles::Application.routes.draw do
   get '/contact'  => 'high_voltage/pages#show', id: 'contact'
   get '/privacy'  => 'high_voltage/pages#show', id: 'privacy'
   get '/terms'    => 'high_voltage/pages#show', id: 'terms'
-  get '/ruby'    => 'high_voltage/pages#show', id: 'ruby'
-  get '/ruby1'    => 'high_voltage/pages#show', id: 'ruby1'
-  get '/php'    => 'high_voltage/pages#show', id: 'php'
-  get '/resume'    => 'high_voltage/pages#show', id: 'resume'
+  get '/ruby'     => 'high_voltage/pages#show', id: 'ruby'
+  get '/ruby_new' => 'high_voltage/pages#show', id: 'ruby_new'
+  get '/php'      => 'high_voltage/pages#show', id: 'php'
+  get '/resume'   => 'high_voltage/pages#show', id: 'resume'
   get '/other'    => 'high_voltage/pages#show', id: 'other'
 
   get '/home', to: redirect('/')
