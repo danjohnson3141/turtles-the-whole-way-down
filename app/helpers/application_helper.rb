@@ -1,7 +1,7 @@
 module ApplicationHelper
   def site_name
     # Change the value below between the quotes.
-    "Development Portfolio | Dan Johnson"
+    "Dev Portfolio | Dan Johnson"
     # "Turtles The Whole Way Down | A Portfolio Site for Dan Johnson"
   end
 
@@ -47,6 +47,6 @@ module ApplicationHelper
               {line1: "Hofstadter's Law: It always takes longer than you expect, ", line2: "even when you take into account Hofstadter's Law.", author: "Douglas Hofstadter"}
             }
     quote_index = quote.keys.sample
-    "<p>#{quote[quote_index][:line1]}</p><p>#{quote[quote_index][:line2]}<cite>#{quote[quote_index][:author]}</cite>"
+    "<p class='quote_p'>#{quote[quote_index][:line1]}</p><p class='quote_p'>#{quote[quote_index][:line2]}<cite>#{quote[quote_index][:author]}</cite>"
   end
 end

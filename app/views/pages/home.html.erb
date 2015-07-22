@@ -20,10 +20,21 @@
   text-shadow: black 0.3em 0.3em 0.3em;
   font-size: 24px;
 }
+@media screen and (max-width: 60.75em){
+  .slides {
+    margin-bottom: 0px;
+    min-height: 420px;
+    max-height: 450px;
+    padding: 5px 50px 5px 50px;
+  }
+}
 .normal-text {
   font-size: 20px;
   color: black;
   text-shadow: black 0em 0em 0em;
+}
+@media screen and (max-width: 60.75em){
+  .normal-text {font-size: 13px;}
 }
 .normal-text.sml {
   font-size: 12px;
@@ -40,6 +51,13 @@
   background-image: url('<%= image_path("bikeshedding1.jpg") %> ');
   background-position: 0% 40%;
   font-size: 20px;
+}
+@media screen and (max-width: 60.75em){
+  .slide-5 {
+    background-image: url('<%= image_path("bikeshedding1.jpg") %> ');
+    background-position: 0% 40%;
+    font-size: 14px;
+  }
 }
 .slide-3 {
   background-image: url('<%= image_path("source-code1.jpg") %> ');
@@ -77,18 +95,46 @@
   height: 400px;
   width: auto;
 }
+@media screen and (max-width: 60.75em){
+  h2 {font-size: 18px;}
+}
+
 .div-right {
-  margin-top: -32px;
-  font-size: 14px;
+  /*margin-top: -32px;*/
+  font-size: 16px;
   float: right;
   width: 534px;
   border-radius: 8px;
-  background: rgba(12, 39, 1, 0.5);
   padding: 5px 5px 0px 5px;
   text-shadow: black 0.0em 0.0em 0.0em;
 }
+
+.shady {
+  background: rgba(12, 39, 1, 0.5);
+}
+
+@media screen and (max-width: 60.75em){
+ .div-right {
+    font-size: 13px;
+    /*margin-top: 1px;*/
+    width: inherit;
+  }
+}
+
 ul {
   margin-left: 500px;
+}
+
+.quote_p {
+  /*margin-top: 120px;*/
+  font-size: 32px;
+}
+
+@media screen and (max-width: 40.75em){
+  .quote_p {
+    /*margin-top: 40px;*/
+    font-size: 18px;
+  }
 }
 </style>
 <%= favicon_link_tag 'favicon.ico' %>
@@ -105,8 +151,8 @@ ul {
    <!-- Carousel items -->
    <div class="carousel-inner">
       <div class="item active slides slide-1">
-        <h2>Turtles the whole way down</h2><br />
-        <div class="div-right">
+        <h2>Turtles the whole way down</h2>
+        <div class="div-right shady">
           <p>
             <em>"Turtles the whole way down"</em> is a jocular expression of the <a href="http://en.wikipedia.org/wiki/Infinite_regress" class="jumbotron_link">infinite regress</a> problem in cosmology posed by the "<a href="http://en.wikipedia.org/wiki/Unmoved_mover" class="jumbotron_link">unmoved mover</a>" paradox. The metaphor in the anecdote represents a popular notion of the myth that Earth is actually flat and is supported on the back of a World Turtle, which itself is propped up by a chain of larger and larger turtles. Questioning what the final turtle might be standing on, the anecdote humorously concludes that it is "turtles the whole way down".
           </p>
@@ -115,14 +161,15 @@ ul {
       </div>
 
       <div class="item slides slide-2">
-        <h1>About me</h1>
+      <!-- <div class="div-right"> -->
+        <h2>About me</h2>
         <p class="normal-text white">I fell in love with programming way back in the 80s after my introduction to the Apple IIe and Apple BASIC. I've been writing code personally and proffesionally ever since.</p>
         <p class="normal-text white">After 16 years of developing mainframe software, which turned out to not be a great career choice, I rebooted my career and switched to developing for the web. I consider myself to be primarily a back-end developer as this more closely resembles my previous experience but I do enjoy working on front-end code as well.</p>
         <p class="normal-text white">I intend to keep coding and learning as long as there is code to be written and new things to learn or until the <a href="http://en.wikipedia.org/wiki/Technological_singularity" style="color: white; text-decoration: underline">singularity</a>.</p>
       </div>
 
       <div class="item slides slide-3">
-        <p style="margin-top: 120px"><blockquote><%= raw quote %></blockquote></p>
+        <p class="quote_p"><blockquote><%= raw quote %></blockquote></p>
       </div>
       
       <div class="item slides slide-4">
@@ -132,7 +179,6 @@ ul {
       <div class="item slides slide-5">
          <h2>NO Bikeshedding!</h2>
          <p>Bikeshedding - the term was coined as a metaphor to illuminate <a href="http://en.wikipedia.org/wiki/Parkinson%27s_Law_of_Triviality" title="Parkinson's Law of Triviality">Parkinson’s Law of Triviality</a>. Parkinson observed that a committee whose job is to approve plans for a nuclear power plant may spend the majority of its time on relatively unimportant but easy-to-grasp issues, such as what materials to use for the staff bikeshed, while neglecting the design of the power plant itself, which is far more important but also far more difficult to criticize constructively. It was popularized in the <a href="http://en.wikipedia.org/wiki/Berkeley_Software_Distribution">Berkeley Software Distribution</a> community and has spread from there to the software industry at large.</p>
-         <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
       </div>
 
       <div class="item slides slide-6">
@@ -162,7 +208,7 @@ ul {
     <div class="col-md-4">
       <h2>Rails Projects </h2>
       <p><strong>Ruby on Rails</strong>, often simply referred to as <strong>Rails</strong>, is an open source web application framework written in <a href="http://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby</a>. Rails is a full-stack framework that emphasizes the use of well-known software engineering patterns and paradigms, including <a href="http://en.wikipedia.org/wiki/Convention_over_configuration">convention over configuration</a>, <a href="http://en.wikipedia.org/wiki/Don%27t_repeat_yourself">don't repeat yourself</a> (DRY), the <a href="http://en.wikipedia.org/wiki/Active_record_pattern">active record pattern</a>, and <a href="http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">model–view–controller</a> (MVC). </p>
-      <p><%= link_to "View Details &raquo;".html_safe, ruby_path, class: "btn btn-default" %></p>
+      <p><%= link_to "View Details &raquo;".html_safe, ruby_path, class: "btn btn-default" %> <%= link_to "View Fancy &raquo;".html_safe, ruby1_path, class: "btn btn-default" %></p>
     </div>
     <div class="col-md-4">
       <h2>PHP Projects</h2>
