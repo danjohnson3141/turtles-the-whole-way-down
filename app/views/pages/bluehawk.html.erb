@@ -1,16 +1,21 @@
-<<<<<<< HEAD
-<% provide(:title, 'Bluehawk CMS/CRM') %>
-<h1>Bluehawk Content Management System and Customer Relationship Management</h1>
-<%= link_to image_tag("bh-dashboard.png", size: "170x150", alt: "Bluehawk", class: "left"), "/assets/E365ERD.png" %>
-<p>It all starts with a world class dashboard giving users a 30,000 foot view of how an event is shaping up. From this information packed screen a salesperson can gauge the health of an event</p>
-=======
+<style>
+	ul{
+	  margin-bottom: 20px;
+	  overflow: hidden;
+	}
+	li{
+	  line-height: 1.5em;
+	  float: left;
+	}
+	.double li  { width:50%;}
+</style>
 <% provide(:title, 'Bluehawk') %>
 <h1>Bluehawk CRM/CMS</h1>
 <p>Bluehawk is a custom built customer relationship manager and content management system used by Evanta. It was written in PHP in the Zend framework and using MySQL and MongoDB for storage. Development of this monolithic application began in 2011. Development continues to this day albiet at a slower pace. Starting in 2013 all new development uses a Ruby on Rails RESTful API for business logic and the existing front-end for presentation.</p>
 <p>The Bluehawk Dashboard provides an <i>at-a-glance</i> view of dozens of key performance indicators for a particular event. Statistics include: </p>
 <%= image_tag("bh-dashboard.png", alt: "Bluehawk Dashboard", class: "left", style: "width: 40%;") %><p>The <strong>Bluehawk Dashboard</strong> provides an <i>at-a-glance</i> view of dozens of key performance indicators for a particular event. The data is presented in several graphical formats so users can quickly gauge performance without the need to pour of the minuatia.</p>
 <p>Acting as both a CRM and CMS means these dashboard metrics include:</p>
-<ul style="margin-left: 43%">
+<ul class="double" style="margin-left: 43%">
 <li>Revenue</li>
 <li>Governing Body Member</li>
 <li>Attendee Registration</li>
@@ -21,13 +26,13 @@
 <li>Evanta Staff Roles</li>
 <li>and more</li>
 </ul>
-<p>Metrics also compare the current event with last year's event to help program directors see how they compare.</p>
+<p>Metrics also compare the current event with last year's event to help program directors see how they are doing.</p>
 <p>A paired down version of this screen is also shown on several large flat screen televisions throughout the office to keep people motivated. Each of the approximately 150 events are slowly cycled on the screens giving everyone an idea of what is going well and what needs more attention.</p>
 <br />
 <%= image_tag("bh-contact.png", alt: "Bluehawk Contact Page", class: "right", style: "width: 40%; margin-left: 30px") %><p>The Bluehawk Contact page is an important tool used by the sales department to manage attendee and sponsor contacts. It shows everything we need to know about a particular contact in an easy to digest format. Basic contact information is shown at the top followed by numerous collapsible panels containing important information about the contact.</p>
 <p>Every interaction with a contact as well as important facts are stored in contact notes which are visible on this page. This lets users easily tell when a contact was last contacted, the outcome of the interaction, and notes for the next contact. Contact notes are also used to store information that doesn't fit into any standard database fields.
 <p>Other information available on this screen includes:</p>
-<ul>
+<ul class="double">
 <li>Contact Organization Information</li>
 <li>Previous Events Attended, Invited, or Declined</li>
 <li>Information about past speaking engagements</li>
@@ -37,6 +42,4 @@
 </ul>
 <br />
 
-<%= image_tag("bh-agenda.png", alt: "Bluehawk Agenda", class: "left", style: "width: 40%") %>
-
->>>>>>> 66b064d9b180c9c29e19a60ab3fef47bce7e7f03
+<%= image_tag("bh-agenda.png", alt: "Bluehawk Agenda", class: "left", style: "width: 40%") %>A powerful agenda editor allows the content department a flexible tool to layout the event sessions.<br>
