@@ -1,6 +1,13 @@
 <style type="text/css">
-	.my-face {width: 220px; height: 260px;}
-	.r-button {margin-top: 5px; padding: 5px 60px 5px 60px;}
+body {
+	background-image: url(<%= image_path("trees.jpeg") %>);
+	background-size:cover;
+	color: white;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+	.my-face {width: 240px; height: 270px;}
+	.r-button {margin-top: 5px; padding: 5px 72px 5px 72px;}
 	@media screen and (max-width: 45.75em){
 		.my-face {
 			width: 150px; height: 180px;
@@ -12,17 +19,21 @@
 			width: 110px; height: 130px;
 		}
 		.r-button {margin-top: 5px; padding: 5px 5px 5px 5px;}
+		.face-column {display: none;}
 	}
+	.shady {
+  background: rgba(12, 39, 1, 0.5);
+}
 </style>
 <% provide(:title, 'About') %>
 <h1>About Me</h1>
 <div class="container">
 <div class="row">
-<div class="col-xs-4">
+<div class="col-xs-4 face-column">
 	<%= image_tag("dan.jpg", class: "my-face", alt: "Dan Johnson") %><br>
 	<%= link_to "View Resume &raquo;".html_safe, resume_path, class: "btn btn-default r-button" %>
 </div>
-<div class="col-xs-8">
+<div class="col-xs-8 shady">
 Accomplished software developer with comprehensive programming experience in Ruby on Rails, PHP, JavaScript, jQuery, AJAX, CSS3 and HTML5. Highly knowledgeable in relational databases design, SQL, and stored procedures. Well versed in test-driven development and red-green-refactoring. Excellent understanding of customer relationship management, content management systems, enterprise resource planning, and warehouse management software. Experienced in writing technical and conceptual documentation. Highly competent in quality assurance testing and end-user support. Goal-driven, innovative, enthusiastic, motivated, team player, problem solver, critical thinker, constant learner.
 <br />
 <br />
@@ -33,6 +44,9 @@ Accomplished software developer with comprehensive programming experience in Rub
 <li>Tools: Sublime Text 3, Atom, Git, Tower, Sequel Pro, RSpec, Factory Girl, Kaleidoscope, Microsoft Office Suite</li>
 <li>Operating Systems: OSX, MS Windows (3.1-7), Linux (Ubuntu), OS/400 (iSeries)</li>
 </ul>
+<p>Over my twenty-five year career as a developer I have learned many lessons that I apply to every project I take on. I subscribe to the prinipals of DRY (don't repeat yourself), DRTW (don't reinvent the wheel), and KISS (keep it simple (<em>stupid</em>)).</p>
+<p>I believe the complexity is the enemy of reliability and that it's better to be smart than clever in most situations. Having spent years working on inherited code I am mindful of the code legacy I am leaving behind.</p>
+<p>With so much time in this field I have a very pragmatic attitude towards the balance between writing elegent code and just getting it done. I have a firm grasp on the efemeral nature of code and know that no matter how good the code is it will likely be removed or refactored as business needs change. In short, I write the best code I can but avoid becoming too atached.</p>
 </div>
 </div>
 </div>
@@ -42,13 +56,13 @@ Accomplished software developer with comprehensive programming experience in Rub
 <div class="container">
 <div class="row">
 <div class="col-xs-4">
-<%= image_tag("petunia.jpg", size: "180x200", alt: "Petunia", class: "img-rounded img-responsive") %>Petunia
+<%= image_tag("petunia.jpg", size: "280x200", alt: "Petunia", class: "img-rounded img-responsive") %>Petunia
 </div>
 <div class="col-xs-4">
-<%= image_tag("petunia.jpg", size: "180x200", alt: "Petunia", class: "img-rounded img-responsive") %>Petunia
+<%= image_tag("petunia.jpg", size: "280x200", alt: "Petunia", class: "img-rounded img-responsive") %>Petunia
 </div>
 <div class="col-xs-4">
-<%= image_tag("petunia.jpg", size: "180x200", alt: "Petunia", class: "img-rounded img-responsive") %>Petunia
+<%= image_tag("petunia.jpg", size: "280x200", alt: "Petunia", class: "img-rounded img-responsive") %>Petunia
 </div>
 </div>
 </div>

@@ -1,12 +1,17 @@
-<style type="text/css">
-	a:hover {
-		text-decoration: none;
-	}
+<style>
+body {
+	background-image: url(<%= image_path("arch.jpeg") %>);
+	background-size:cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 </style>
 <% provide(:title, 'PHP') %>
+<div style="color: white">
 <h1>PHP Projects</h1>
 <p>Ruby on Rails has become my perfered tool for development. It works very well for projects ranging from simple to very complex. Developing in Rails I am more productive and deliver better results.</p>
-<p>Below are some person applications I have created. Unfortunately, most of my best work is on proprietery websites.</p>
+<p><strong>Below are some person applications I have created. Unfortunately, most of my best work is on proprietery websites.</strong></p>
+</div>
 <section id="body">
   <div id="projects">
     
@@ -26,6 +31,13 @@
 		<p><%= image_tag("evanta.png", size: "180x150", alt: "fat-free-crm", class: "left") %>
 		<p><a href="http://www.evanta.com/"><strong>Evanta Homepage</strong></a></p>
 		<p>This is Evanta's main webpage. All content is derived from Bluehawk, our in-house, custom developed, content management and customer relation system.</p>
+		<p></p>
+	</div>
+	
+	<div class="project">
+		<p><%= image_tag("pfh.png", size: "180x150", alt: "fat-free-crm", class: "right") %>
+		<p><a href="http://www.passionforhealingnaturopathic.com/"><strong>Passion for Healing Naturopathic</strong></a></p>
+		<p>This is the webpage of my partner, Dr. Mindy Curry ND. It's primarily an old school procedural PHP application. Some day I will find time to bring it up to modern website standards like responsive design.</p>
 		<p></p>
 	</div>
 	

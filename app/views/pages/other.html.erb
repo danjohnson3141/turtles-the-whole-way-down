@@ -1,4 +1,13 @@
+<style>
+body {
+	background-image: url(<%= image_path("arch.jpeg") %>);
+	background-size:cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+</style>
 <% provide(:title, 'Other') %>
+<div style="color: white;">
 <h1>Other Development Related Information</h1>
 <p>Software development is more than just writing eligent code. I wear many hats during a project including:</p>
 <ul><li>Database Architect</li>
@@ -6,7 +15,8 @@
 <li>Test Writer</li>
 <li>Project Manager</li>
 <li>Team Leader/Team Morale Booster</li></ul>
-<p>Below are some examples of non-programming tasks I have been responsible for.</p>
+<p><strong>Below are some examples of non-programming tasks I have been responsible for.</strong></p>
+</div>
 <section id="body">
   <div id="projects">
     
@@ -34,14 +44,13 @@
 	</div>
 
 	
-		<div class="project">
-			<a href="http://www.sundayassemblypdx.org/"><%= image_tag("sa1.png", size: "180x150", alt: "refinery", class: "right") %>
-			<p><strong>Volunteer Work | Portland Sunday Assembly</strong></p></a>
-			<p>I maintain the website for the group Portland Sunday Assembly. Since taking over maintenance of this site I've added Facebook, Twitter, Google+, Paypal, and Meetup.com integration.</p>
-			<p>The site has recently been migrated from <a href="http://portland.sundayassembly.com/">Wordpress</a> to <a href="http://www.sundayassemblypdx.org/">Nationbuilder</a> which is a platform that caters more to nonprofits and charities.</p>
-		</div>
-	</a>
+	<div class="project">
+		<a href="http://www.sundayassemblypdx.org/"><%= image_tag("sa1.png", size: "180x150", alt: "refinery", class: "right") %>
+		<p><strong>Volunteer Work | Portland Sunday Assembly</strong></p></a>
+		<p>I maintain the website for the group Portland Sunday Assembly. Since taking over maintenance of this site I've added Facebook, Twitter, Google+, Paypal, and Meetup.com integration.</p>
+		<p>The site has recently been migrated from Wordpress</a> to <a href="http://www.nationbuilder.org/">Nationbuilder</a> which is a platform that caters more to nonprofits and charities.</p>
 	</div>
+  </div>
 </section>
 <!-- <p>Find me in app/views/pages/ruby.html.erb</p> -->
 <p class="thanks">Thanks for looking</p>

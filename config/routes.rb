@@ -8,6 +8,7 @@ Turtles::Application.routes.draw do
   get '/php'      => 'high_voltage/pages#show', id: 'php'
   get '/resume'   => 'high_voltage/pages#show', id: 'resume'
   get '/other'    => 'high_voltage/pages#show', id: 'other'
+  get '/blog'    => 'high_voltage/pages#show', id: 'blog'
 
   get '/home', to: redirect('/')
 
