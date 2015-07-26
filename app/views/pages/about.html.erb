@@ -1,11 +1,11 @@
 <style type="text/css">
-body {
-	background-image: url(<%= image_path("trees.jpeg") %>);
-	background-size:cover;
-	color: white;
-	background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+	body {
+		background-image: url(<%= image_path("trees.jpeg") %>);
+		background-size:cover;
+		color: white;
+		background-repeat: no-repeat;
+	    background-attachment: fixed;
+	}
 	.my-face {width: 240px; height: 270px;}
 	.r-button {margin-top: 5px; padding: 5px 72px 5px 72px;}
 	@media screen and (max-width: 45.75em){
@@ -22,48 +22,62 @@ body {
 		.face-column {display: none;}
 	}
 	.shady {
-  background: rgba(12, 39, 1, 0.5);
-}
+	  	background: rgba(12, 39, 1, 0.5);
+	}
 </style>
 <% provide(:title, 'About') %>
 <h1>About Me</h1>
 <div class="container">
-<div class="row">
-<div class="col-xs-4 face-column">
-	<%= image_tag("dan.jpg", class: "my-face", alt: "Dan Johnson") %><br>
-	<%= link_to "View Resume &raquo;".html_safe, resume_path, class: "btn btn-default r-button" %>
+	<div class="row">
+		<div class="col-xs-4 face-column">
+			<%= image_tag("dan.jpg", class: "my-face", alt: "Dan Johnson") %><br>
+			<%= link_to "View Resume &raquo;".html_safe, resume_path, class: "btn btn-default r-button" %>
+		</div>
+		<div class="col-xs-8 shady">
+			Accomplished software developer with comprehensive programming experience in Ruby on Rails, PHP, JavaScript, jQuery, AJAX, CSS3 and HTML5. Highly knowledgeable in relational databases design, SQL, and stored procedures. Well versed in test-driven development and red-green-refactoring. Excellent understanding of customer relationship management, content management systems, enterprise resource planning, and warehouse management software. Experienced in writing technical and conceptual documentation. Highly competent in quality assurance testing and end-user support. Goal-driven, innovative, enthusiastic, motivated, team player, problem solver, critical thinker, constant learner.
+			<br />
+			<br />
+			<ul>
+			<li>Specialties: RESTful APIs, Behavior- and Test-Driven-Design, Object Oriented Programming, MVC Design Pattern</li>
+			<li>Languages: Ruby on Rails, PHP, Javascript, jQuery, HTML5, CSS3</li>
+			<li>Databases: MySQL, SQL Lite, MongoDB, Postgres, and DB2/400 (iSeries)</li>
+			<li>Tools: Sublime Text 3, Atom, Git, Tower, Sequel Pro, RSpec, Factory Girl, Kaleidoscope, Microsoft Office Suite</li>
+			<li>Operating Systems: OSX, MS Windows (3.1-7), Linux (Ubuntu), OS/400 (iSeries)</li>
+			</ul>
+			<p>Over my twenty-five year career as a developer I have learned many lessons that I apply to every project I take on. I subscribe to the prinipals of DRY (don't repeat yourself), DRTW (don't reinvent the wheel), and KISS (keep it simple (<em>stupid</em>)).</p>
+			<p>I believe the complexity is the enemy of reliability and that it's better to be smart than clever in most situations. Having spent years working on inherited code I am mindful of the code legacy I am leaving behind.</p>
+			<p>With so much time in this field I have a very pragmatic attitude towards the balance between writing elegent code and just getting it done. I have a firm grasp on the efemeral nature of code and know that no matter how good the code is it will likely be removed or refactored as business needs change. In short, I write the best code I can but avoid becoming too atached.</p>
+		</div>
+	</div>
 </div>
-<div class="col-xs-8 shady">
-Accomplished software developer with comprehensive programming experience in Ruby on Rails, PHP, JavaScript, jQuery, AJAX, CSS3 and HTML5. Highly knowledgeable in relational databases design, SQL, and stored procedures. Well versed in test-driven development and red-green-refactoring. Excellent understanding of customer relationship management, content management systems, enterprise resource planning, and warehouse management software. Experienced in writing technical and conceptual documentation. Highly competent in quality assurance testing and end-user support. Goal-driven, innovative, enthusiastic, motivated, team player, problem solver, critical thinker, constant learner.
-<br />
-<br />
-<ul>
-<li>Specialties: RESTful APIs, Behavior- and Test-Driven-Design, Object Oriented Programming, MVC Design Pattern</li>
-<li>Languages: Ruby on Rails, PHP, Javascript, jQuery, HTML5, CSS3</li>
-<li>Databases: MySQL, SQL Lite, MongoDB, Postgres, and DB2/400 (iSeries)</li>
-<li>Tools: Sublime Text 3, Atom, Git, Tower, Sequel Pro, RSpec, Factory Girl, Kaleidoscope, Microsoft Office Suite</li>
-<li>Operating Systems: OSX, MS Windows (3.1-7), Linux (Ubuntu), OS/400 (iSeries)</li>
-</ul>
-<p>Over my twenty-five year career as a developer I have learned many lessons that I apply to every project I take on. I subscribe to the prinipals of DRY (don't repeat yourself), DRTW (don't reinvent the wheel), and KISS (keep it simple (<em>stupid</em>)).</p>
-<p>I believe the complexity is the enemy of reliability and that it's better to be smart than clever in most situations. Having spent years working on inherited code I am mindful of the code legacy I am leaving behind.</p>
-<p>With so much time in this field I have a very pragmatic attitude towards the balance between writing elegent code and just getting it done. I have a firm grasp on the efemeral nature of code and know that no matter how good the code is it will likely be removed or refactored as business needs change. In short, I write the best code I can but avoid becoming too atached.</p>
+<div class="shady">
+	<h3>About me (non work-related)</h3>
+	<p>I am a proud lifelong Oregonian and twenty year resident of the Portland area.</p>
+	<p>When I'm not writing software I enjoy several hobbies including: hiking, camping, walking my dog, gardening, home improvement, motorcycle riding (streetbike), listening to podcasts, binge-watching Netflix, grilling meat, and playing the occasional video game.</p>
 </div>
-</div>
-</div>
-<h3>About me (non work-related)</h3>
-<p>I am a proud lifelong Oregonian and twenty year resident of the Portland area.</p>
-<p>When I'm not writing software I enjoy several hobbies including: hiking, camping, walking my dog, gardening, home improvement, motorcycle riding (streetbike), listening to podcasts, binge-watching Netflix, grilling meat, and playing the occasional video game.</p>
 <div class="container">
-<div class="row">
-<div class="col-xs-4">
-<%= image_tag("petunia.jpg", size: "280x200", alt: "Petunia", class: "img-rounded img-responsive") %>Petunia
-</div>
-<div class="col-xs-4">
-<%= image_tag("petunia.jpg", size: "280x200", alt: "Petunia", class: "img-rounded img-responsive") %>Petunia
-</div>
-<div class="col-xs-4">
-<%= image_tag("petunia.jpg", size: "280x200", alt: "Petunia", class: "img-rounded img-responsive") %>Petunia
-</div>
+	<div class="row">
+		<div class="col-xs-4">
+			<%= image_tag("petunia.jpg", size: "280x200", alt: "Petunia", class: "img-rounded img-responsive") %><div class="shady">Petunia</div>
+		</div>
+		<div class="col-xs-4">
+			<%= image_tag("garden.jpg", size: "280x200", alt: "Gardening", class: "img-rounded img-responsive") %><div class="shady">Gardening</div>
+		</div>
+		<div class="col-xs-4">
+			<%= image_tag("hiking.jpg", size: "280x200", alt: "Hiking", class: "img-rounded img-responsive", style: "margin-top: 23px;") %><div class="shady">Hiking</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-4">
+			<%= image_tag("camping.jpg", size: "280x200", alt: "Camping", class: "img-rounded img-responsive") %><div class="shady">Camping</div>
+		</div>
+		<div class="col-xs-4">
+			<%= image_tag("grill.jpg", size: "280x200", alt: "Grilling", class: "img-rounded img-responsive", style: "margin-top: 35px;") %><div class="shady">Grilling</div>
+		</div>
+		<div class="col-xs-4">
+			<%= image_tag("binge-watch.jpg", size: "280x200", alt: "Binge-Watching", class: "img-rounded img-responsive", style: "margin-top: 50px;") %><div class="shady">Binge-Watching Netflix</div>
+		</div>
+	</div>
 </div>
 </div>
 <!-- <p>Find me in app/views/pages/about.html.erb</p> -->
