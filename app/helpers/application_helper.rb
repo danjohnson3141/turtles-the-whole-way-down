@@ -1,6 +1,5 @@
 module ApplicationHelper
   def site_name
-    # Change the value below between the quotes.
     "Development Portfolio | Dan Johnson"
     # "Turtles The Whole Way Down | A Portfolio Site for Dan Johnson"
   end
@@ -16,17 +15,14 @@ module ApplicationHelper
   end
 
   def meta_author
-    # Change the value below between the quotes.
     "Dan Johnson"
   end
 
   def meta_description
-    # Change the value below between the quotes.
     "Portfolio and Information Site for Dan Johnson"
   end
 
   def meta_keywords
-    # Change the value below between the quotes.
     "ruby on rails php developer portland experienced"
   end
 
