@@ -36,8 +36,12 @@ GEM
     coffee-script-source (1.8.0)
     erubis (2.7.0)
     execjs (2.2.1)
+    hashie (3.4.2)
     high_voltage (2.2.1)
     hike (1.2.3)
+    httparty (0.13.3)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     i18n (0.6.11)
     jbuilder (1.5.3)
       activesupport (>= 3.0.0)
@@ -52,7 +56,11 @@ GEM
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.10.1)
+    multi_xml (0.5.5)
     newrelic_rpm (3.9.0.229)
+    nike (0.2.7)
+      activesupport (>= 3.2.0)
+      hashie (>= 1.2.0)
     pg (0.17.1)
     polyglot (0.3.5)
     rack (1.5.2)
@@ -117,9 +125,11 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
   high_voltage
+  httparty
   jbuilder (~> 1.2)
   jquery-rails
   newrelic_rpm
+  nike
   pg
   rails (= 4.0.5)
   rails_12factor

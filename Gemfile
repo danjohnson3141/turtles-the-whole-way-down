@@ -15,6 +15,9 @@ group :production, :staging do
 end
 gem 'rails_12factor', group: :production
 
+gem 'nike'
+gem 'httparty'
+
 gem 'high_voltage'
 
 gem 'sprockets'
