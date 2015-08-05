@@ -1,0 +1,35 @@
+<% provide(:title, 'Blog') %>
+<h1>Blog</h1>
+<p>Nike Running API Demo using the <a href="https://github.com/skryl/nike">Nike+ REST Client API Gem</a></p>
+<table class="table table-striped table-bordered">
+<thead>
+<tr><th>Activity</th><th>Distance</th><th>Speed</th><th>Duration</th><th>Fuel</th><th>Device</th><th>Emotion</th><th>Shoes</th><th>Terrain</th><th>Weather</th><th>GPS?</th></tr>
+</thead>
+<tbody>
+<% 
+	c = Nike::Client.new('drj3141@gmail.com', 'Goober1970!') 
+	activities = c.activities
+%>
+<% activities.each do |activity| %>
+<% d = activity.metrics.duration.to_s 
+	shoes = activity.tags.shoes
+	if shoes
+		name = shoes.name
+	end
+%>
+<tr>
+	<td><a href="#"><%= activity.name %></a></td>
+	<td><%= activity.metrics.distance_in_miles.round 2 %>mi</td>
+	<td><%= activity.metrics.speed_in_mph.round 2 %>mph</td>
+	<td><%= activity.metrics.duration_in_hms %></td>
+	<td><%= activity.metrics.fuel %></td>
+	<td><%= activity.device_type %></td>
+	<td><%= activity.tags.emotion.try(:titleize) %></td>
+	<td><%= name %></td>
+	<td><%= activity.tags.terrain.try(:titleize) %></td>
+	<td><%= activity.tags.weather.try(:titleize) %></td>
+	<td><span class="glyphicon-class glyphicon glyphicon-<%= activity.gps ? 'ok' : 'remove' %>" style="color: <%= activity.gps ? 'green' : 'red' %>"></span></td>
+</tr>
+<% end %>
+</tbody>
+</table>

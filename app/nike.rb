@@ -1,29 +1,28 @@
-<%
-# c = Nike::Client.new('drj3141@gmail.com', 'Goober1970!') 
+c = Nike::Client.new('drj3141@gmail.com', 'Goober1970!') 
 
-# c.activities do |a|
-#   puts "{name: '#{a.name}', distance: #{a.metrics.distance_in_miles.round 2}, speed: #{a.metrics.speed_in_mph.round 2}, duration: '#{a.metrics.duration_in_hms}', fuel: #{a.metrics.fuel}, device_type: '#{a.device_type}', emotion: '#{a.tags.emotion.try(:titleize)}', shoes: '#{a.tags.shoes.name if a.tags.shoes}', terrain: '#{a.tags.terrain.try(:titleize)}', weather: '#{a.tags.weather.try(:titleize)}', gps: #{a.gps}}, "
-# end
+c.activities do |a|
+  puts "{name: '#{a.name}', distance: #{a.metrics.distance_in_miles.round 2}, speed: #{a.metrics.speed_in_mph.round 2}, duration: '#{a.metrics.duration_in_hms}', fuel: #{a.metrics.fuel}, device_type: '#{a.device_type}', emotion: '#{a.tags.emotion.try(:titleize)}', shoes: '#{a.tags.shoes.name if a.tags.shoes}', terrain: '#{a.tags.terrain.try(:titleize)}', weather: '#{a.tags.weather.try(:titleize)}', gps: #{a.gps}}, "
+end
 
-nike = [
-# {name: 'RUN ON: 02/04/13 04:17 PM', distance: 1.53, speed: 2.73, duration: '00:33:39', fuel: 387, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
-# {name: 'RUN ON: 02/07/13 09:10 AM', distance: 2.51, speed: 3.44, duration: '00:43:44', fuel: 578, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
-# {name: 'RUN ON: 02/09/13 09:50 AM', distance: 3.81, speed: 3.36, duration: '01:08:07', fuel: 910, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
-# {name: 'RUN ON: 02/10/13 10:00 AM', distance: 2.83, speed: 3.26, duration: '00:52:12', fuel: 703, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
-# {name: 'RUN ON: 02/15/13 05:40 PM', distance: 1.48, speed: 3.26, duration: '00:27:19', fuel: 357, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
-# {name: 'RUN ON: 02/17/13 06:02 PM', distance: 0.93, speed: 3.05, duration: '00:18:18', fuel: 240, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
-# {name: 'RUN ON: 02/20/13 05:12 PM', distance: 2.02, speed: 3.31, duration: '00:36:35', fuel: 471, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
-# {name: 'RUN ON: 02/21/13 05:55 PM', distance: 1.1, speed: 3.42, duration: '00:19:22', fuel: 255, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
-# {name: 'RUN ON: 02/23/13 09:47 AM', distance: 2.71, speed: 2.87, duration: '00:56:32', fuel: 641, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
-# {name: 'RUN ON: 02/24/13 12:46 PM', distance: 0.25, speed: 0.31, duration: '00:48:18', fuel: 69, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
-# {name: 'RUN ON: 02/25/13 04:59 PM', distance: 2.5, speed: 3.07, duration: '00:48:53', fuel: 591, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
-# {name: 'RUN ON: 02/27/13 05:24 PM', distance: 1.43, speed: 3.23, duration: '00:26:26', fuel: 329, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
-# {name: 'RUN ON: 03/17/13 12:30 PM', distance: 5.5, speed: 2.58, duration: '02:07:54', fuel: 1342, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
-# {name: 'RUN ON: 03/21/13 05:00 PM', distance: 2.36, speed: 2.9, duration: '00:48:47', fuel: 573, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
-# {name: 'RUN ON: 03/23/13 09:58 AM', distance: 2.09, speed: 2.92, duration: '00:42:57', fuel: 510, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
-# {name: 'RUN ON: 03/25/13 05:08 PM', distance: 1.72, speed: 2.55, duration: '00:40:20', fuel: 419, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
-# {name: 'RUN ON: 03/27/13 05:49 PM', distance: 0.9, speed: 3.11, duration: '00:17:16', fuel: 212, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
-# {name: 'RUN ON: 03/28/13 04:57 PM', distance: 2.58, speed: 3.19, duration: '00:48:39', fuel: 611, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
+nike = [{name: 'RUN ON: 08/26/11 11:48 AM', distance: 2.74, speed: 3.16, duration: '00:52:05', fuel: 932, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
+{name: 'RUN ON: 02/04/13 04:17 PM', distance: 1.53, speed: 2.73, duration: '00:33:39', fuel: 387, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
+{name: 'RUN ON: 02/07/13 09:10 AM', distance: 2.51, speed: 3.44, duration: '00:43:44', fuel: 578, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
+{name: 'RUN ON: 02/09/13 09:50 AM', distance: 3.81, speed: 3.36, duration: '01:08:07', fuel: 910, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
+{name: 'RUN ON: 02/10/13 10:00 AM', distance: 2.83, speed: 3.26, duration: '00:52:12', fuel: 703, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
+{name: 'RUN ON: 02/15/13 05:40 PM', distance: 1.48, speed: 3.26, duration: '00:27:19', fuel: 357, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
+{name: 'RUN ON: 02/17/13 06:02 PM', distance: 0.93, speed: 3.05, duration: '00:18:18', fuel: 240, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
+{name: 'RUN ON: 02/20/13 05:12 PM', distance: 2.02, speed: 3.31, duration: '00:36:35', fuel: 471, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
+{name: 'RUN ON: 02/21/13 05:55 PM', distance: 1.1, speed: 3.42, duration: '00:19:22', fuel: 255, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
+{name: 'RUN ON: 02/23/13 09:47 AM', distance: 2.71, speed: 2.87, duration: '00:56:32', fuel: 641, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
+{name: 'RUN ON: 02/24/13 12:46 PM', distance: 0.25, speed: 0.31, duration: '00:48:18', fuel: 69, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
+{name: 'RUN ON: 02/25/13 04:59 PM', distance: 2.5, speed: 3.07, duration: '00:48:53', fuel: 591, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
+{name: 'RUN ON: 02/27/13 05:24 PM', distance: 1.43, speed: 3.23, duration: '00:26:26', fuel: 329, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
+{name: 'RUN ON: 03/17/13 12:30 PM', distance: 5.5, speed: 2.58, duration: '02:07:54', fuel: 1342, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
+{name: 'RUN ON: 03/21/13 05:00 PM', distance: 2.36, speed: 2.9, duration: '00:48:47', fuel: 573, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
+{name: 'RUN ON: 03/23/13 09:58 AM', distance: 2.09, speed: 2.92, duration: '00:42:57', fuel: 510, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
+{name: 'RUN ON: 03/25/13 05:08 PM', distance: 1.72, speed: 2.55, duration: '00:40:20', fuel: 419, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
+{name: 'RUN ON: 03/27/13 05:49 PM', distance: 0.9, speed: 3.11, duration: '00:17:16', fuel: 212, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
+{name: 'RUN ON: 03/28/13 04:57 PM', distance: 2.58, speed: 3.19, duration: '00:48:39', fuel: 611, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
 {name: 'RUN ON: 03/30/13 06:29 PM', distance: 0.7, speed: 2.87, duration: '00:14:39', fuel: 165, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
 {name: 'RUN ON: 05/04/13 09:35 AM', distance: 3.18, speed: 2.43, duration: '01:18:31', fuel: 770, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
 {name: 'RUN ON: 05/04/13 06:24 PM', distance: 3.16, speed: 3.24, duration: '00:58:31', fuel: 729, device_type: 'IPOD', emotion: '', shoes: '', terrain: '', weather: '', gps: false}, 
@@ -640,33 +639,3 @@ nike = [
 {name: 'RUN ON: 08/03/15 07:20 PM', distance: 0.84, speed: 2.47, duration: '00:20:21', fuel: 230, device_type: 'IPHONE', emotion: 'Unstoppable', shoes: 'Slippers', terrain: 'Road', weather: '', gps: true}, 
 {name: 'RUN ON: 08/04/15 06:27 AM', distance: 4.29, speed: 2.73, duration: '01:34:10', fuel: 1323, device_type: 'IPHONE', emotion: 'Unstoppable', shoes: 'new sketcher', terrain: 'Road', weather: 'Sunny', gps: true}, 
 {name: 'RUN ON: 08/04/15 05:36 PM', distance: 3.71, speed: 2.41, duration: '01:32:16', fuel: 1123, device_type: 'IPHONE', emotion: 'Unstoppable', shoes: 'Nike Flex', terrain: 'Road', weather: 'Sunny', gps: true}]
-%>
-<% provide(:title, 'Blog') %>
-<h1>Blog</h1>
-<p>Nike Running API Demo using the <a href="https://github.com/skryl/nike">Nike+ REST Client API Gem</a></p>
-<table class="table table-striped table-bordered">
-<thead>
-<tr><th>Activity</th><th>Distance</th><th>Speed</th><th>Duration</th><th>Fuel</th><th>Device</th><th>Emotion</th><th>Shoes</th><th>Terrain</th><th>Weather</th><th>GPS?</th></tr>
-</thead>
-<tbody>
-<% 
-	# c = Nike::Client.new('drj3141@gmail.com', 'Goober1970!') 
-	# activities = c.activities
-%>
-<% nike.each do |activity| %>
-<tr>
-	<td><a href="#"><%= activity[:name] %></a></td>
-	<td><%= activity[:distance] %>mi</td>
-	<td><%= activity[:speed] %>mph</td>
-	<td><%= activity[:duration] %></td>
-	<td><%= activity[:fuel] %></td>
-	<td><%= activity[:device_type] %></td>
-	<td><%= activity[:emotion] %></td>
-	<td><%= activity[:shoes] %></td>
-	<td><%= activity[:terrain] %></td>
-	<td><%= activity[:weather] %></td>
-	<td><span class="glyphicon-class glyphicon glyphicon-<%= activity[:gps] ? 'ok' : 'remove' %>" style="color: <%= activity[:gps] ? 'green' : 'red' %>"></span></td>
-</tr>
-<% end %>
-</tbody>
-</table>
