@@ -51,7 +51,7 @@ group :doc do
 end
 group :development do
   gem 'pry'
-  gem 'pry-debugger'
+  gem 'pry-byebug'
   gem 'capistrano'
   gem 'capistrano-rvm'
   gem 'capistrano-bundler'
