@@ -135,7 +135,6 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
-    sqlite3 (1.3.9)
     sshkit (1.7.1)
       colorize (>= 0.7.0)
       net-scp (>= 1.1.2)
@@ -162,6 +161,7 @@ DEPENDENCIES
   capistrano-rails
   capistrano-rvm
   coffee-rails (~> 4.0.0)
+  colorize
   high_voltage
   httparty
   jbuilder (~> 1.2)
@@ -176,6 +176,5 @@ DEPENDENCIES
   sass-rails (~> 4.0.2)
   sdoc
   sprockets
-  sqlite3
   turbolinks
   uglifier (>= 1.3.0)

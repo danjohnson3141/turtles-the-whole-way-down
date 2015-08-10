@@ -5,14 +5,8 @@ ruby '2.2.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.5'
 
-# Use sqlite3 as the database for Active Record
-group :development, :test do
-  gem 'sqlite3'
-end
+gem "pg"
 
-group :production, :staging do
-  gem "pg"
-end
 gem 'rails_12factor', group: :production
 
 gem 'nike'
@@ -27,6 +21,9 @@ gem 'sass-rails', '~> 4.0.2'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
+
+# color text output helper
+gem 'colorize'
 
 gem 'newrelic_rpm'
 
@@ -49,6 +46,7 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
 group :development do
   gem 'pry'
   gem 'pry-byebug'
