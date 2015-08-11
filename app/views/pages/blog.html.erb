@@ -1,39 +1,26 @@
-<style>
-	.x-sml {font-size: small; font-weight: normal;}
-	.norm {font-weight: normal;}
-	body { background: aliceblue;}
-	
-</style>
 <% provide(:title, 'Blog') %>
-<ul class="nav nav-pills" role="tablist" style="margin-top: 10px;">
-  <li role="presentation" class="active"><a href="/blog">Blog Home <span class="badge">1</span></a></li>
-  <li role="presentation"><a href="#">New <span class="badge">1</span></a></li>
-  <li role="presentation"><a href="#">Featured</a></li>
-</ul>
-<body>
-<h1 style="margin-bottom: -15px;">The Blog</h1>
-<h3 style="color: grey; font-size: 20px;" class="norm">Random musing about development and other interests.</h3>
-<br>
-<div class="blog-section">
-	<p>
-		<%= link_to "<span class='glyphicon-class glyphicon glyphicon-book'></span> Pulling Fitness Data from Nike Runnings's API ".html_safe, 'blog/fitness', class: "btn btn-primary" %><br>
-		<p class="label label-success x-sml"><span class="glyphicon-class glyphicon glyphicon-calendar"></span> August 1, 2015 <span class="glyphicon-class glyphicon glyphicon-user"></span> Dan Johnson</p>
-		<p style="margin-top: 5px;"><span class='glyphicon-class glyphicon glyphicon-tags'></span> Tags: <span class="norm"><span class="label label-danger">Dev</span> <span class="label label-danger">Hobby</span> <span class="label label-danger">Fitness</span></span></p>
-	</p>
-	<p>
-		I've been using the NikeRunning app for almost five years and it occured to me that it might be interesting to parse all that data. Sure enough, Nike has a nice API that is well documented on their site <a href="https://developer.nike.com/index.html">developer.nike.com</a>. To avoid recreating the wheel (DRTW - don't recreate the wheel) I used the <a href="https://github.com/skryl/nike">Nike+ REST Client API Gem</a> created by <a href="https://github.com/skryl">Alex Skryl</a>. I may fork this project and add a few more parsing helpers that I used and I think others might find useful. <a href="/blog/fitness">read more...</a>
-	</p>
+<%= render "shared/blog_nav" %>
+<body class="blog">
+	<div class="blog-section">
+		<p>
+			<%= link_to "<span class='glyphicon-class glyphicon glyphicon-book'></span> Pulling Fitness Data from Nike Runnings's API ".html_safe, 'blog/fitness', class: "btn btn-primary" %><br>
+			<p class="label label-success x-sml"><span class="glyphicon-class glyphicon glyphicon-calendar"></span> August 1, 2015 <span class="glyphicon-class glyphicon glyphicon-user"></span> Dan Johnson</p>
+			<p style="margin-top: 5px;"><span class='glyphicon-class glyphicon glyphicon-tags'></span> Tags: <span class="norm"><span class="label label-danger">Dev</span> <span class="label label-danger">Hobby</span> <span class="label label-danger">Fitness</span></span></p>
+		</p>
+		<p>
+			I've been using the NikeRunning app for almost five years and it occured to me that it might be interesting to parse all that data. Sure enough, Nike has a nice API that is well documented on their site <a href="https://developer.nike.com/index.html">developer.nike.com</a>. To avoid recreating the wheel (DRTW - don't recreate the wheel) I used the <a href="https://github.com/skryl/nike">Nike+ REST Client API Gem</a> created by <a href="https://github.com/skryl">Alex Skryl</a>. I may fork this project and add a few more parsing helpers that I used and I think others might find useful. <a href="/blog/fitness">read more...</a>
+		</p>
 
-</div>	
-<div class="blog-section">
-	<p>
-		<%= link_to "<span class='glyphicon-class glyphicon glyphicon-book'></span> Getting started with Watson Developer Cloud and Bluemix".html_safe, 'blog', class: "btn btn-primary" %><br>
-		<p class="label label-success x-sml"><span class="glyphicon-class glyphicon glyphicon-calendar"></span> August 1, 2015 <span class="glyphicon-class glyphicon glyphicon-user"></span> Dan Johnson</p><br>
-		<p style="margin-top: 5px;"><span class='glyphicon-class glyphicon glyphicon-tags'></span> Tags: <span class="norm"><span class="label label-danger">Dev</span> <span class="label label-danger">Hobby</span> <span class="label label-danger">Fitness</span></span></p>
-	</p>
-	<p>
-		Developers are doing some really cool stuff with IBM's Watson and the IBM Watson Developer Cloud (WDC). The <a href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/getting_started/">getting started</a> guide is pretty heady reading but I'm excited to see what kind of fun I can have I can have with this. More to come...
-	</p>
+	</div>	
+	<div class="blog-section">
+		<p>
+			<%= link_to "<span class='glyphicon-class glyphicon glyphicon-book'></span> Getting started with Watson Developer Cloud and Bluemix".html_safe, 'blog', class: "btn btn-primary" %><br>
+			<p class="label label-success x-sml"><span class="glyphicon-class glyphicon glyphicon-calendar"></span> August 1, 2015 <span class="glyphicon-class glyphicon glyphicon-user"></span> Dan Johnson</p><br>
+			<p style="margin-top: 5px;"><span class='glyphicon-class glyphicon glyphicon-tags'></span> Tags: <span class="norm"><span class="label label-danger">Dev</span> <span class="label label-danger">Hobby</span> <span class="label label-danger">AI</span> <span class="label label-danger">Singularity</span></span></p>
+		</p>
+		<p>
+			Developers are doing some really cool stuff with IBM's Watson and the IBM Watson Developer Cloud (WDC). The <a href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/getting_started/">getting started</a> guide is pretty heady reading but I'm excited to see what kind of fun I can have I can have with this. More to come...
+		</p>
 
-</div>	
+	</div>
 </body>
