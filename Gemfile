@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-# ruby '2.2.0' # let heroku figure it out?
+ruby '3.0.5' # let heroku figure it out?
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.5'
